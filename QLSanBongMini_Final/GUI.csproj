@@ -1,0 +1,231 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{958589FD-1463-41FA-9355-31F8AA18B4E1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QLSanBongMini_Final</RootNamespace>
+    <AssemblyName>QLSanBongMini_Final</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2" />
+    <Reference Include="DevExpress.Printing.v19.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI_QuanLy_FWA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_FWA.Designer.cs">
+      <DependentUpon>GUI_QuanLy_FWA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_QuanLy_KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_KhachHang.Designer.cs">
+      <DependentUpon>GUI_QuanLy_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_QuanLy_KhachHang_ChinhSua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_KhachHang_ChinhSua.Designer.cs">
+      <DependentUpon>GUI_QuanLy_KhachHang_ChinhSua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_QuanLy_KhachHang_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_KhachHang_Them.Designer.cs">
+      <DependentUpon>GUI_QuanLy_KhachHang_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_QuanLy_KhuVucSanBong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_KhuVucSanBong.Designer.cs">
+      <DependentUpon>GUI_QuanLy_KhuVucSanBong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_QuanLy_KhuVucSanBong_ChinhSua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_KhuVucSanBong_ChinhSua.Designer.cs">
+      <DependentUpon>GUI_QuanLy_KhuVucSanBong_ChinhSua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_QuanLy_KhuVucSanBong_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_KhuVucSanBong_Them.Designer.cs">
+      <DependentUpon>GUI_QuanLy_KhuVucSanBong_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_QuanLy_LichDat_SanBong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_LichDat_SanBong.Designer.cs">
+      <DependentUpon>GUI_QuanLy_LichDat_SanBong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_QuanLy_LichDat_SanBong_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_LichDat_SanBong_Them.Designer.cs">
+      <DependentUpon>GUI_QuanLy_LichDat_SanBong_Them.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_QuanLy_SanBong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_SanBong.Designer.cs">
+      <DependentUpon>GUI_QuanLy_SanBong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_TrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_TrangChu.Designer.cs">
+      <DependentUpon>GUI_TrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI_QuanLy_FWA.resx">
+      <DependentUpon>GUI_QuanLy_FWA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLy_KhachHang.resx">
+      <DependentUpon>GUI_QuanLy_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLy_KhachHang_ChinhSua.resx">
+      <DependentUpon>GUI_QuanLy_KhachHang_ChinhSua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLy_KhachHang_Them.resx">
+      <DependentUpon>GUI_QuanLy_KhachHang_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLy_KhuVucSanBong.resx">
+      <DependentUpon>GUI_QuanLy_KhuVucSanBong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLy_KhuVucSanBong_ChinhSua.resx">
+      <DependentUpon>GUI_QuanLy_KhuVucSanBong_ChinhSua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLy_KhuVucSanBong_Them.resx">
+      <DependentUpon>GUI_QuanLy_KhuVucSanBong_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLy_LichDat_SanBong.resx">
+      <DependentUpon>GUI_QuanLy_LichDat_SanBong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLy_LichDat_SanBong_Them.resx">
+      <DependentUpon>GUI_QuanLy_LichDat_SanBong_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLy_SanBong.resx">
+      <DependentUpon>GUI_QuanLy_SanBong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_TrangChu.resx">
+      <DependentUpon>GUI_TrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\football_icon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\add_icon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{27a2ac0f-bf74-4f01-9324-e1bd1876f48b}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{5d7f92aa-ddc0-40d7-a413-dd720f24c036}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\food_icon.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\water.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\accesstory.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\area.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\money.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\account.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AddUser_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User_Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accesstory_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
