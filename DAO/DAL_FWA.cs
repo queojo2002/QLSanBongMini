@@ -37,7 +37,7 @@ namespace DAL
 
         public bool Insert(int IDLoaiFWA, string TenFWA, int GiaTien, string img)
         {
-            return DAL_DB.Instance.ThuThi_NonQuery("INSERT INTO [dbo].[FWA] ([IDLoaiFWA],[TenFWA],[GiaTien],[image]) VALUES ('"+IDLoaiFWA+ "','" + TenFWA + "','" + GiaTien + "',CONVERT(varchar(max), '" + img + "', 0))") > 0 ? true:false;
+            return DAL_DB.Instance.ThuThi_NonQuery("INSERT INTO [dbo].[FWA] ([IDLoaiFWA],[TenFWA],[GiaTien],[image]) VALUES ('" + IDLoaiFWA + "',N'" + TenFWA + "','" + GiaTien + "',CONVERT(varchar(max), '" + img + "', 0))") > 0 ? true : false;
         }
 
     }

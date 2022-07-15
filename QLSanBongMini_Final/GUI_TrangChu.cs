@@ -47,5 +47,12 @@ namespace QLSanBongMini_Final
             qlkh.MdiParent = this;
             qlkh.Show();
         }
+
+        private void btn_mnFWA_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmQuanLy_FWA qlfwa = new frmQuanLy_FWA();
+            qlfwa.MdiParent = this;
+            qlfwa.Show();
+        }
     }
 }

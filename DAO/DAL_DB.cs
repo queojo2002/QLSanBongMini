@@ -12,7 +12,7 @@ namespace DAL
     {
         private static DAL_DB instance;
 
-        public static string conn_str = @"Data Source=DESKTOP-0KAI17V;Initial Catalog=QLSanBongFinal;Integrated Security=True";
+        public static string conn_str = @"Data Source=MSI;Initial Catalog=QLSanBongFinal;Integrated Security=True";
 
         public static DAL_DB Instance
         {

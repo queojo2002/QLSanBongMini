@@ -1,45 +1,31 @@
-﻿using DevExpress.XtraEditors;
+﻿using BUS;
+using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BUS;
-using System.Globalization;
 
 namespace QLSanBongMini_Final
 {
-    public partial class frmQuanLy_FWA : DevExpress.XtraEditors.XtraForm
+    public partial class frmThanhToan : DevExpress.XtraEditors.XtraForm
     {
         public System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLy_FWA));
 
-
-        public frmQuanLy_FWA()
+        public frmThanhToan()
         {
             InitializeComponent();
         }
 
-        private void frmQuanLy_FWA_Load(object sender, EventArgs e)
-        {
-            Load_FWA();
-        }
-        /* private void btnNhaplai_Click(object sender, EventArgs e)
-         {
-             txtTen.Text = "";
-             numricGiaTien.Value = 0;
-             pic_1.Image = null;
-         }*/
-
-
         public void Load_FWA()
         {
-            flow_ShowFWA.Controls.Clear();
-            Flow_ThemMoi();
+            flpFWA.Controls.Clear();
             DataTable Get_FWA = BUS_FWA.Instance.Select();
             if (Get_FWA != null)
             {
@@ -49,73 +35,6 @@ namespace QLSanBongMini_Final
                 }
             }
         }
-
-
-
-
-
-
-        public void Flow_ThemMoi()
-        {
-            SimpleButton btn_add = new SimpleButton();
-            btn_add.ImageOptions.Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\Resources\\shop_food.png")));
-            btn_add.Appearance.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-
-            btn_add.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
-            btn_add.Size = new System.Drawing.Size(256, 256);
-            btn_add.Text = "\r\n Thêm mới FWA";
-            btn_add.Click += Show_FWA_ADD;
-            flow_ShowFWA.Controls.Add(btn_add);
-        }
-
-        /* public void Flow_ThemMoi()
-         {
-             // 
-             // panelThemMoi
-             // 
-             this.panelThemMoi.Controls.Add(this.picThemMoi);
-             this.panelThemMoi.Controls.Add(this.lblThemMoi);
-             this.panelThemMoi.Location = new System.Drawing.Point(3, 3);
-             this.panelThemMoi.Name = "panelThemMoi";
-             this.panelThemMoi.Size = new System.Drawing.Size(256, 256);
-             this.panelThemMoi.TabIndex = 5;
-             // 
-             // lblThemMoi
-             // 
-             this.lblThemMoi.Appearance.BackColor = System.Drawing.Color.Transparent;
-             this.lblThemMoi.Appearance.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-             this.lblThemMoi.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-             this.lblThemMoi.Appearance.Options.UseBackColor = true;
-             this.lblThemMoi.Appearance.Options.UseFont = true;
-             this.lblThemMoi.Appearance.Options.UseForeColor = true;
-             this.lblThemMoi.Appearance.Options.UseTextOptions = true;
-             this.lblThemMoi.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-             this.lblThemMoi.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-             this.lblThemMoi.Dock = System.Windows.Forms.DockStyle.Bottom;
-             this.lblThemMoi.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-             this.lblThemMoi.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
-             this.lblThemMoi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("panel_lbl_Giatien.ImageOptions.SvgImage")));
-             this.lblThemMoi.Location = new System.Drawing.Point(2, 205);
-             this.lblThemMoi.Name = "lblThemMoi";
-             this.lblThemMoi.Click += Show_FWA_ADD;
-             this.lblThemMoi.Size = new System.Drawing.Size(252, 49);
-             this.lblThemMoi.TabIndex = 2;
-             this.lblThemMoi.Text = "Thêm mới FWA";
-             // 
-             // picThemMoi
-             // 
-             this.picThemMoi.Dock = System.Windows.Forms.DockStyle.Fill;
-             this.picThemMoi.Image = global::QLSanBongMini_Final.Properties.Resources.food_image_128;
-             this.picThemMoi.Location = new System.Drawing.Point(2, 2);
-             this.picThemMoi.Name = "picThemMoi";
-             this.picThemMoi.Click += Show_FWA_ADD;
-             this.picThemMoi.Size = new System.Drawing.Size(252, 203);
-             this.picThemMoi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-             this.picThemMoi.TabIndex = 0;
-             this.picThemMoi.TabStop = false;
-             flow_ShowFWA.Controls.Add(panelThemMoi);
-         }*/
-
         public void Flow_Add_FWA(string ID, string Ten, string GiaTien, Image IMG)
         {
             PanelControl Panel_Img_Add = new PanelControl();
@@ -184,10 +103,8 @@ namespace QLSanBongMini_Final
             Pic_Add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             Pic_Add.TabStop = false;
             Pic_Add.Image = IMG;
-            flow_ShowFWA.Controls.Add(Panel_Img_Add);
+            flpFWA.Controls.Add(Panel_Img_Add);
         }
-
-
         public Image Base64ToImage(string base64String)
         {
             byte[] imageBytes = Convert.FromBase64String(base64String);
@@ -198,15 +115,11 @@ namespace QLSanBongMini_Final
             }
         }
 
-
-
-        public void Show_FWA_ADD(object sender, EventArgs e)
+        private void frmThanhToan_Load(object sender, EventArgs e)
         {
-            frmQuanLy_FWA_Them fwa_add = new frmQuanLy_FWA_Them();
-            fwa_add.ShowDialog();
             Load_FWA();
-            this.Show();
         }
+
 
     }
 }

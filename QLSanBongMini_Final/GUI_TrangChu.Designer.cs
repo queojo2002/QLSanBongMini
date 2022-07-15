@@ -34,9 +34,7 @@ namespace QLSanBongMini_Final
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btn_QuanLySanBong = new DevExpress.XtraBars.BarButtonItem();
             this.btn_mnLichSanBong = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_mnFood = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_mnWater = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_mnAccesstory = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_mnFWA = new DevExpress.XtraBars.BarButtonItem();
             this.btn_mnKhuVucSanBong = new DevExpress.XtraBars.BarButtonItem();
             this.btn_mnDoanhThu = new DevExpress.XtraBars.BarButtonItem();
             this.btn_mnTaiKhoan = new DevExpress.XtraBars.BarButtonItem();
@@ -68,9 +66,7 @@ namespace QLSanBongMini_Final
             this.ribbonControl1.SearchEditItem,
             this.btn_QuanLySanBong,
             this.btn_mnLichSanBong,
-            this.btn_mnFood,
-            this.btn_mnWater,
-            this.btn_mnAccesstory,
+            this.btn_mnFWA,
             this.btn_mnKhuVucSanBong,
             this.btn_mnDoanhThu,
             this.btn_mnTaiKhoan,
@@ -101,26 +97,13 @@ namespace QLSanBongMini_Final
             this.btn_mnLichSanBong.Name = "btn_mnLichSanBong";
             this.btn_mnLichSanBong.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_mnLichSanBong_ItemClick);
             // 
-            // btn_mnFood
+            // btn_mnFWA
             // 
-            this.btn_mnFood.Caption = "Quản lý thức ăn";
-            this.btn_mnFood.Id = 3;
-            this.btn_mnFood.ImageOptions.SvgImage = global::QLSanBongMini_Final.Properties.Resources.food_icon;
-            this.btn_mnFood.Name = "btn_mnFood";
-            // 
-            // btn_mnWater
-            // 
-            this.btn_mnWater.Caption = "Quản lý Nước Uống";
-            this.btn_mnWater.Id = 4;
-            this.btn_mnWater.ImageOptions.SvgImage = global::QLSanBongMini_Final.Properties.Resources.water;
-            this.btn_mnWater.Name = "btn_mnWater";
-            // 
-            // btn_mnAccesstory
-            // 
-            this.btn_mnAccesstory.Caption = "Quản lý Phụ Kiện";
-            this.btn_mnAccesstory.Id = 5;
-            this.btn_mnAccesstory.ImageOptions.SvgImage = global::QLSanBongMini_Final.Properties.Resources.accesstory;
-            this.btn_mnAccesstory.Name = "btn_mnAccesstory";
+            this.btn_mnFWA.Caption = "Quản lý FWA";
+            this.btn_mnFWA.Id = 3;
+            this.btn_mnFWA.ImageOptions.SvgImage = global::QLSanBongMini_Final.Properties.Resources.food_icon;
+            this.btn_mnFWA.Name = "btn_mnFWA";
+            this.btn_mnFWA.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_mnFWA_ItemClick);
             // 
             // btn_mnKhuVucSanBong
             // 
@@ -196,9 +179,7 @@ namespace QLSanBongMini_Final
             // rgp_fwa
             // 
             this.rgp_fwa.AllowTextClipping = false;
-            this.rgp_fwa.ItemLinks.Add(this.btn_mnFood);
-            this.rgp_fwa.ItemLinks.Add(this.btn_mnWater);
-            this.rgp_fwa.ItemLinks.Add(this.btn_mnAccesstory);
+            this.rgp_fwa.ItemLinks.Add(this.btn_mnFWA);
             this.rgp_fwa.Name = "rgp_fwa";
             this.rgp_fwa.Text = "Trang chức năng: Quản lý thức ăn, nước uống, phụ kiện";
             // 
@@ -291,9 +272,7 @@ namespace QLSanBongMini_Final
         private DevExpress.XtraBars.BarButtonItem btn_mnLichSanBong;
         private DevExpress.XtraBars.Ribbon.RibbonPage rp_manager;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rgp_fwa;
-        private DevExpress.XtraBars.BarButtonItem btn_mnFood;
-        private DevExpress.XtraBars.BarButtonItem btn_mnWater;
-        private DevExpress.XtraBars.BarButtonItem btn_mnAccesstory;
+        private DevExpress.XtraBars.BarButtonItem btn_mnFWA;
         private DevExpress.XtraBars.BarButtonItem btn_mnKhuVucSanBong;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup rpg_quanlykhuvucsanbong;
         private DevExpress.XtraBars.BarButtonItem btn_mnDoanhThu;

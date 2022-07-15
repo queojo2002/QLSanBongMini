@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BUS;
 using System.Threading;
+using System.IO;
 
 namespace QLSanBongMini_Final
 {
@@ -24,7 +25,7 @@ namespace QLSanBongMini_Final
             Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("vi-vn");
         }
 
-      
+
 
         public void Load_SanBong()
         {
@@ -72,7 +73,7 @@ namespace QLSanBongMini_Final
                     }
                 }
             }
-            
+
         }
 
         private void update_status_realtime_Tick(object sender, EventArgs e)
@@ -119,8 +120,8 @@ namespace QLSanBongMini_Final
                 if (Flag_Check_Reload_Form == 1) Load_SanBong();
 
             }
-            
-            
+
+
 
         }
 
@@ -150,7 +151,7 @@ namespace QLSanBongMini_Final
             ten_san.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             ten_san.Location = new System.Drawing.Point(0, 31);
             ten_san.Size = new System.Drawing.Size(325, 35);
-            ten_san.Text = "Tên Loại Sân: " + Ten_ChiTiet_LichDat_SanBong;
+            ten_san.Text = "Khu vực: " + Ten_ChiTiet_LichDat_SanBong;
 
             trang_thai.Appearance.Font = new System.Drawing.Font("Segoe UI", 8.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             trang_thai.Appearance.Options.UseFont = true;
@@ -161,7 +162,7 @@ namespace QLSanBongMini_Final
             trang_thai.Location = new System.Drawing.Point(0, 150);
             trang_thai.BackColor = Color_Change;
             trang_thai.Size = new System.Drawing.Size(325, 35);
-            trang_thai.Text = "Trạng Thái: " + TrangThai;
+            trang_thai.Text = "Trạng thái: " + TrangThai;
 
             khunggio.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             khunggio.Appearance.Options.UseFont = true;
@@ -171,7 +172,7 @@ namespace QLSanBongMini_Final
             khunggio.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             khunggio.Location = new System.Drawing.Point(0, 0);
             khunggio.Size = new System.Drawing.Size(325, 35);
-            khunggio.Text = "Khung Giờ: " + KhungGio_BatDau + " - " + KhungGio_KetThuc;
+            khunggio.Text = "Khung giờ: " + KhungGio_BatDau + " - " + KhungGio_KetThuc;
 
             btn_xuly.Enabled = Button_XuLy;
             btn_xuly.Appearance.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -193,7 +194,7 @@ namespace QLSanBongMini_Final
             //btn_xuly_1.Click += GUI_BTN_ChuyenTrangThai;
 
             pic_add.Dock = System.Windows.Forms.DockStyle.Fill;
-            pic_add.Image = Image.FromFile(Application.StartupPath + @"\Resource\sanbong.png");
+            pic_add.Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\Resources\\sanbong.png")));
             pic_add.Location = new System.Drawing.Point(2, 2);
             pic_add.Size = new System.Drawing.Size(325, 215);
             pic_add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

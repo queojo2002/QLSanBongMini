@@ -60,6 +60,12 @@
     <Compile Include="GUI_QuanLy_FWA.Designer.cs">
       <DependentUpon>GUI_QuanLy_FWA.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_QuanLy_FWA_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_FWA_Them.Designer.cs">
+      <DependentUpon>GUI_QuanLy_FWA_Them.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_QuanLy_KhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,12 @@
     <Compile Include="GUI_QuanLy_SanBong.Designer.cs">
       <DependentUpon>GUI_QuanLy_SanBong.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_ThanhToan.Designer.cs">
+      <DependentUpon>GUI_ThanhToan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_TrangChu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +136,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI_QuanLy_FWA.resx">
       <DependentUpon>GUI_QuanLy_FWA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLy_FWA_Them.resx">
+      <DependentUpon>GUI_QuanLy_FWA_Them.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_QuanLy_KhachHang.resx">
       <DependentUpon>GUI_QuanLy_KhachHang.cs</DependentUpon>
@@ -151,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_QuanLy_SanBong.resx">
       <DependentUpon>GUI_QuanLy_SanBong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_ThanhToan.resx">
+      <DependentUpon>GUI_ThanhToan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_TrangChu.resx">
       <DependentUpon>GUI_TrangChu.cs</DependentUpon>
@@ -219,6 +237,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\accesstory_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_image_128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moneysvg.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
