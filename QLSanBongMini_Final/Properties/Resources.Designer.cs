@@ -121,6 +121,16 @@ namespace QLSanBongMini_Final.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap banhmi {
+            get {
+                object obj = ResourceManager.GetObject("banhmi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type DevExpress.Utils.Svg.SvgImage.
         /// </summary>
         internal static DevExpress.Utils.Svg.SvgImage food_icon {
@@ -153,9 +163,29 @@ namespace QLSanBongMini_Final.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icontinhtien_1 {
+            get {
+                object obj = ResourceManager.GetObject("icontinhtien_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap image_food {
             get {
                 object obj = ResourceManager.GetObject("image_food", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap inhoadon {
+            get {
+                object obj = ResourceManager.GetObject("inhoadon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

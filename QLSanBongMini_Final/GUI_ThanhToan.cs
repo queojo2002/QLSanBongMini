@@ -31,78 +31,61 @@ namespace QLSanBongMini_Final
             {
                 for (int i = 0; i < Get_FWA.Rows.Count; i++)
                 {
-                    Flow_Add_FWA(Get_FWA.Rows[i]["ID"].ToString(), Get_FWA.Rows[i]["TenFWA"].ToString(), int.Parse(Get_FWA.Rows[i]["GiaTien"].ToString()).ToString("c0", CultureInfo.GetCultureInfo("vi-VN")), Base64ToImage(Get_FWA.Rows[i]["image"].ToString()));
+                    Flow_Add_FWA(Get_FWA.Rows[i]["ID"].ToString(), Get_FWA.Rows[i]["TenFWA"].ToString() + "\r\n" + int.Parse(Get_FWA.Rows[i]["GiaTien"].ToString()).ToString("c0", CultureInfo.GetCultureInfo("vi-VN")), Base64ToImage(Get_FWA.Rows[i]["image"].ToString()));
                 }
             }
         }
-        public void Flow_Add_FWA(string ID, string Ten, string GiaTien, Image IMG)
+        public void Flow_Add_FWA(string ID, string Text, Image IMG)
         {
             PanelControl Panel_Img_Add = new PanelControl();
             LabelControl PanelLBL_Ten = new LabelControl();
-            LabelControl PanelLBL_GiaTien = new LabelControl();
+            SimpleButton button_add = new SimpleButton();
             PictureBox Pic_Add = new PictureBox();
             Panel_Img_Add.SuspendLayout();
 
+
+            // 
+            // panelFWAChildren
+            // 
+            Panel_Img_Add.Controls.Add(button_add);
             Panel_Img_Add.Controls.Add(PanelLBL_Ten);
-            Panel_Img_Add.Controls.Add(PanelLBL_GiaTien);
             Panel_Img_Add.Controls.Add(Pic_Add);
-            Panel_Img_Add.Location = new System.Drawing.Point(265, 3);
-            Panel_Img_Add.Name = ID;
-            Panel_Img_Add.Size = new System.Drawing.Size(256, 256);
+            Panel_Img_Add.Location = new System.Drawing.Point(3, 3);
+            Panel_Img_Add.Size = new System.Drawing.Size(169, 207);
             // 
-            // panel_lbl_Tenphukien
+            // lblten
             // 
-            PanelLBL_Ten.Appearance.BackColor = System.Drawing.Color.Transparent;
-            PanelLBL_Ten.Appearance.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            PanelLBL_Ten.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            PanelLBL_Ten.Appearance.Options.UseBackColor = true;
+            PanelLBL_Ten.Appearance.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             PanelLBL_Ten.Appearance.Options.UseFont = true;
-            PanelLBL_Ten.Appearance.Options.UseForeColor = true;
             PanelLBL_Ten.Appearance.Options.UseTextOptions = true;
-            PanelLBL_Ten.Dock = System.Windows.Forms.DockStyle.Top;
             PanelLBL_Ten.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             PanelLBL_Ten.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             PanelLBL_Ten.Dock = System.Windows.Forms.DockStyle.Top;
-            PanelLBL_Ten.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            PanelLBL_Ten.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
-
-            PanelLBL_Ten.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("panel_lbl_Tenphukien.ImageOptions.SvgImage")));
             PanelLBL_Ten.Location = new System.Drawing.Point(2, 2);
-            PanelLBL_Ten.Name = ID;
-            PanelLBL_Ten.Size = new System.Drawing.Size(252, 49);
-            PanelLBL_Ten.Text = Ten;
+            PanelLBL_Ten.Size = new System.Drawing.Size(165, 62);
+            PanelLBL_Ten.Text = Text;
             // 
-            // panel_lbl_Giatien
-            // 
-            PanelLBL_GiaTien.Appearance.BackColor = System.Drawing.Color.Transparent;
-            PanelLBL_GiaTien.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            PanelLBL_GiaTien.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            PanelLBL_GiaTien.Appearance.Options.UseBackColor = true;
-            PanelLBL_GiaTien.Appearance.Options.UseFont = true;
-            PanelLBL_GiaTien.Appearance.Options.UseForeColor = true;
-            PanelLBL_GiaTien.Appearance.Options.UseTextOptions = true;
-            PanelLBL_GiaTien.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            PanelLBL_GiaTien.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            PanelLBL_GiaTien.Dock = System.Windows.Forms.DockStyle.Bottom;
-            PanelLBL_GiaTien.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            PanelLBL_GiaTien.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
-            PanelLBL_GiaTien.ImageOptions.SvgImage = global::QLSanBongMini_Final.Properties.Resources.moneysvg;
-            PanelLBL_GiaTien.Location = new System.Drawing.Point(2, 205);
-            PanelLBL_GiaTien.Name = ID;
-            PanelLBL_GiaTien.Size = new System.Drawing.Size(252, 49);
-            PanelLBL_GiaTien.Text = GiaTien;
-
-
-            // 
-            // pic_1
+            // picFWA
             // 
             Pic_Add.Dock = System.Windows.Forms.DockStyle.Fill;
-            Pic_Add.Location = new System.Drawing.Point(2, 51);
-            Pic_Add.Name = ID;
-            Pic_Add.Size = new System.Drawing.Size(252, 154);
-            Pic_Add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            Pic_Add.TabStop = false;
             Pic_Add.Image = IMG;
+            Pic_Add.Location = new System.Drawing.Point(2, 64);
+            Pic_Add.Size = new System.Drawing.Size(165, 107);
+            Pic_Add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            // 
+            // btnAddFWA
+            // 
+            button_add.Dock = System.Windows.Forms.DockStyle.Bottom;
+            button_add.ImageOptions.Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\Resources\\add_icon_1.png")));
+            button_add.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            button_add.Location = new System.Drawing.Point(2, 171);
+            button_add.Name = "btnAddFWA";
+            button_add.Size = new System.Drawing.Size(165, 34);
+            button_add.Text = "Thêm vào sân bóng";
+
+
+           
+
             flpFWA.Controls.Add(Panel_Img_Add);
         }
         public Image Base64ToImage(string base64String)
@@ -120,6 +103,6 @@ namespace QLSanBongMini_Final
             Load_FWA();
         }
 
-
+      
     }
 }
