@@ -119,6 +119,7 @@ namespace QLSanBongMini_Final
             this.btn_mnDoanhThu.Id = 7;
             this.btn_mnDoanhThu.ImageOptions.SvgImage = global::QLSanBongMini_Final.Properties.Resources.money;
             this.btn_mnDoanhThu.Name = "btn_mnDoanhThu";
+            this.btn_mnDoanhThu.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_mnDoanhThu_ItemClick);
             // 
             // btn_mnTaiKhoan
             // 

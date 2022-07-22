@@ -54,5 +54,12 @@ namespace QLSanBongMini_Final
             qlfwa.MdiParent = this;
             qlfwa.Show();
         }
+
+        private void btn_mnDoanhThu_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmQuanLy_DoanhThu _DoanhThu = new frmQuanLy_DoanhThu();
+            _DoanhThu.MdiParent = this;
+            _DoanhThu.Show();
+        }
     }
 }

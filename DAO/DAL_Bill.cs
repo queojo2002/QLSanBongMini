@@ -44,6 +44,10 @@ namespace DAL
             return DAL_DB.Instance.ThuThi_Query("Select * From [dbo].[HoaDon] Where IDCTLDSB = '" + ID + "'");
         }
 
+        public DataTable Select_Xem_DoanhThu(DateTime TuNgay, DateTime DenNgay)
+        {
+            return DAL_DB.Instance.ThuThi_Query("SELECT HoaDon.* FROM HoaDon WHERE (TrangThai = 1) AND (CONVERT(date, NgayXuatBill) >= '" + TuNgay.ToString("yyyy-MM-dd") + "') AND (CONVERT(date, NgayXuatBill) <= '" + DenNgay.ToString("yyyy-MM-dd") + "')");
+        }
         public bool Insert(int IDCTLDSB, int IDKhachHang, DateTime NgayLap_Bill, int ThanhTien, int TrangThai)
         {
             int insert_bill = DAL_DB.Instance.ThuThi_NonQuery(
