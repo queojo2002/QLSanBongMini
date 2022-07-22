@@ -40,9 +40,11 @@ namespace QLSanBongMini_Final
             this.lblLoc = new DevExpress.XtraEditors.LabelControl();
             this.panelThongTin = new DevExpress.XtraEditors.PanelControl();
             this.groupThanhToan = new DevExpress.XtraEditors.GroupControl();
+            this.lblTongTien = new DevExpress.XtraEditors.LabelControl();
+            this.nudGiamGia = new System.Windows.Forms.NumericUpDown();
+            this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
             this.btnTinhTien = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
-            this.lblTongTien = new DevExpress.XtraEditors.LabelControl();
             this.groupInfoFWA = new DevExpress.XtraEditors.GroupControl();
             this.grid_view_fwa = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -56,9 +58,6 @@ namespace QLSanBongMini_Final
             this.lblSoLanDat = new DevExpress.XtraEditors.LabelControl();
             this.lblSDTnguoidat = new DevExpress.XtraEditors.LabelControl();
             this.lblNguoidat = new DevExpress.XtraEditors.LabelControl();
-            this.btnDatLai = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.panelFWA)).BeginInit();
             this.panelFWA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelFWA_top)).BeginInit();
@@ -70,6 +69,7 @@ namespace QLSanBongMini_Final
             this.panelThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupThanhToan)).BeginInit();
             this.groupThanhToan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudGiamGia)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupInfoFWA)).BeginInit();
             this.groupInfoFWA.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grid_view_fwa)).BeginInit();
@@ -81,7 +81,6 @@ namespace QLSanBongMini_Final
             this.groupTTSan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupKH)).BeginInit();
             this.groupKH.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // flpFWA
@@ -90,7 +89,7 @@ namespace QLSanBongMini_Final
             this.flpFWA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flpFWA.Location = new System.Drawing.Point(2, 105);
             this.flpFWA.Name = "flpFWA";
-            this.flpFWA.Size = new System.Drawing.Size(543, 563);
+            this.flpFWA.Size = new System.Drawing.Size(543, 561);
             this.flpFWA.TabIndex = 0;
             // 
             // panelFWA
@@ -100,7 +99,7 @@ namespace QLSanBongMini_Final
             this.panelFWA.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelFWA.Location = new System.Drawing.Point(0, 0);
             this.panelFWA.Name = "panelFWA";
-            this.panelFWA.Size = new System.Drawing.Size(547, 670);
+            this.panelFWA.Size = new System.Drawing.Size(547, 668);
             this.panelFWA.TabIndex = 1;
             // 
             // panelFWA_top
@@ -136,6 +135,7 @@ namespace QLSanBongMini_Final
             this.btnXoaLoc.Size = new System.Drawing.Size(183, 35);
             this.btnXoaLoc.TabIndex = 8;
             this.btnXoaLoc.Text = "Xóa lọc !!!";
+            this.btnXoaLoc.Click += new System.EventHandler(this.btnXoaLoc_Click);
             // 
             // btnLoc
             // 
@@ -148,6 +148,7 @@ namespace QLSanBongMini_Final
             this.btnLoc.Size = new System.Drawing.Size(210, 35);
             this.btnLoc.TabIndex = 7;
             this.btnLoc.Text = "Lọc !!!";
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
             // cbeLoaiFWA
             // 
@@ -189,50 +190,24 @@ namespace QLSanBongMini_Final
             this.panelThongTin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelThongTin.Location = new System.Drawing.Point(547, 0);
             this.panelThongTin.Name = "panelThongTin";
-            this.panelThongTin.Size = new System.Drawing.Size(718, 670);
+            this.panelThongTin.Size = new System.Drawing.Size(718, 668);
             this.panelThongTin.TabIndex = 3;
             // 
             // groupThanhToan
             // 
             this.groupThanhToan.AppearanceCaption.Options.UseTextOptions = true;
             this.groupThanhToan.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.groupThanhToan.Controls.Add(this.numericUpDown1);
-            this.groupThanhToan.Controls.Add(this.simpleButton2);
-            this.groupThanhToan.Controls.Add(this.btnDatLai);
+            this.groupThanhToan.Controls.Add(this.lblTongTien);
+            this.groupThanhToan.Controls.Add(this.nudGiamGia);
+            this.groupThanhToan.Controls.Add(this.btnThoat);
             this.groupThanhToan.Controls.Add(this.btnTinhTien);
             this.groupThanhToan.Controls.Add(this.labelControl1);
-            this.groupThanhToan.Controls.Add(this.lblTongTien);
             this.groupThanhToan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupThanhToan.Location = new System.Drawing.Point(2, 489);
+            this.groupThanhToan.Location = new System.Drawing.Point(2, 483);
             this.groupThanhToan.Name = "groupThanhToan";
-            this.groupThanhToan.Size = new System.Drawing.Size(714, 179);
+            this.groupThanhToan.Size = new System.Drawing.Size(714, 183);
             this.groupThanhToan.TabIndex = 16;
             this.groupThanhToan.Text = "Thanh toán";
-            // 
-            // btnTinhTien
-            // 
-            this.btnTinhTien.Appearance.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTinhTien.Appearance.Options.UseFont = true;
-            this.btnTinhTien.ImageOptions.Image = global::QLSanBongMini_Final.Properties.Resources.icontinhtien_1;
-            this.btnTinhTien.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnTinhTien.Location = new System.Drawing.Point(340, 72);
-            this.btnTinhTien.Name = "btnTinhTien";
-            this.btnTinhTien.Size = new System.Drawing.Size(182, 104);
-            this.btnTinhTien.TabIndex = 4;
-            this.btnTinhTien.Text = "Tính tiền !!!";
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseTextOptions = true;
-            this.labelControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl1.Location = new System.Drawing.Point(340, 36);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(83, 27);
-            this.labelControl1.TabIndex = 1;
-            this.labelControl1.Text = "Giảm giá: ";
             // 
             // lblTongTien
             // 
@@ -246,9 +221,56 @@ namespace QLSanBongMini_Final
             this.lblTongTien.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblTongTien.Location = new System.Drawing.Point(2, 23);
             this.lblTongTien.Name = "lblTongTien";
-            this.lblTongTien.Size = new System.Drawing.Size(332, 154);
+            this.lblTongTien.Size = new System.Drawing.Size(330, 158);
             this.lblTongTien.TabIndex = 0;
             this.lblTongTien.Text = "Tổng tiền: 35.000.000 đ";
+            // 
+            // nudGiamGia
+            // 
+            this.nudGiamGia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nudGiamGia.Location = new System.Drawing.Point(453, 34);
+            this.nudGiamGia.Name = "nudGiamGia";
+            this.nudGiamGia.Size = new System.Drawing.Size(256, 29);
+            this.nudGiamGia.TabIndex = 0;
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.Appearance.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Appearance.Options.UseFont = true;
+            this.btnThoat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.ImageOptions.Image")));
+            this.btnThoat.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnThoat.Location = new System.Drawing.Point(570, 74);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(138, 104);
+            this.btnThoat.TabIndex = 6;
+            this.btnThoat.Text = "Thoát\r\n[ESC]";
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // btnTinhTien
+            // 
+            this.btnTinhTien.Appearance.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTinhTien.Appearance.Options.UseFont = true;
+            this.btnTinhTien.ImageOptions.Image = global::QLSanBongMini_Final.Properties.Resources.icontinhtien_1;
+            this.btnTinhTien.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnTinhTien.Location = new System.Drawing.Point(340, 74);
+            this.btnTinhTien.Name = "btnTinhTien";
+            this.btnTinhTien.Size = new System.Drawing.Size(224, 104);
+            this.btnTinhTien.TabIndex = 4;
+            this.btnTinhTien.Text = "Tính tiền !!!\r\n[ENTER]";
+            this.btnTinhTien.Click += new System.EventHandler(this.btnTinhTien_Click);
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseTextOptions = true;
+            this.labelControl1.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.labelControl1.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl1.Location = new System.Drawing.Point(340, 36);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(107, 27);
+            this.labelControl1.TabIndex = 1;
+            this.labelControl1.Text = "Giảm giá (%): ";
             // 
             // groupInfoFWA
             // 
@@ -256,7 +278,7 @@ namespace QLSanBongMini_Final
             this.groupInfoFWA.AppearanceCaption.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.groupInfoFWA.Controls.Add(this.grid_view_fwa);
             this.groupInfoFWA.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupInfoFWA.Location = new System.Drawing.Point(2, 151);
+            this.groupInfoFWA.Location = new System.Drawing.Point(2, 145);
             this.groupInfoFWA.Name = "groupInfoFWA";
             this.groupInfoFWA.Size = new System.Drawing.Size(714, 338);
             this.groupInfoFWA.TabIndex = 13;
@@ -298,7 +320,7 @@ namespace QLSanBongMini_Final
             this.panelInfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelInfo.Location = new System.Drawing.Point(2, 2);
             this.panelInfo.Name = "panelInfo";
-            this.panelInfo.Size = new System.Drawing.Size(714, 149);
+            this.panelInfo.Size = new System.Drawing.Size(714, 143);
             this.panelInfo.TabIndex = 15;
             // 
             // groupTTSan
@@ -311,7 +333,7 @@ namespace QLSanBongMini_Final
             this.groupTTSan.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupTTSan.Location = new System.Drawing.Point(334, 2);
             this.groupTTSan.Name = "groupTTSan";
-            this.groupTTSan.Size = new System.Drawing.Size(378, 145);
+            this.groupTTSan.Size = new System.Drawing.Size(378, 139);
             this.groupTTSan.TabIndex = 15;
             this.groupTTSan.Text = "Thông tin sân";
             // 
@@ -325,9 +347,9 @@ namespace QLSanBongMini_Final
             this.lblThoiLuong.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.lblThoiLuong.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.lblThoiLuong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblThoiLuong.Location = new System.Drawing.Point(2, 101);
+            this.lblThoiLuong.Location = new System.Drawing.Point(2, 93);
             this.lblThoiLuong.Name = "lblThoiLuong";
-            this.lblThoiLuong.Size = new System.Drawing.Size(374, 38);
+            this.lblThoiLuong.Size = new System.Drawing.Size(374, 35);
             this.lblThoiLuong.TabIndex = 3;
             this.lblThoiLuong.Text = "Thời lượng: 1 tiếng";
             // 
@@ -343,7 +365,7 @@ namespace QLSanBongMini_Final
             this.lblKhungGio.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblKhungGio.Location = new System.Drawing.Point(2, 58);
             this.lblKhungGio.Name = "lblKhungGio";
-            this.lblKhungGio.Size = new System.Drawing.Size(374, 43);
+            this.lblKhungGio.Size = new System.Drawing.Size(374, 35);
             this.lblKhungGio.TabIndex = 2;
             this.lblKhungGio.Text = "Khung giờ từ: 11:00:00 - 12:00:00";
             // 
@@ -373,7 +395,7 @@ namespace QLSanBongMini_Final
             this.groupKH.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupKH.Location = new System.Drawing.Point(2, 2);
             this.groupKH.Name = "groupKH";
-            this.groupKH.Size = new System.Drawing.Size(332, 145);
+            this.groupKH.Size = new System.Drawing.Size(332, 139);
             this.groupKH.TabIndex = 14;
             this.groupKH.Text = "Thông tin khách hàng";
             // 
@@ -389,7 +411,7 @@ namespace QLSanBongMini_Final
             this.lblSoLanDat.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblSoLanDat.Location = new System.Drawing.Point(2, 93);
             this.lblSoLanDat.Name = "lblSoLanDat";
-            this.lblSoLanDat.Size = new System.Drawing.Size(328, 46);
+            this.lblSoLanDat.Size = new System.Drawing.Size(328, 35);
             this.lblSoLanDat.TabIndex = 2;
             this.lblSoLanDat.Text = "Số lần đã đặt sân: 3 lần";
             // 
@@ -425,44 +447,11 @@ namespace QLSanBongMini_Final
             this.lblNguoidat.TabIndex = 0;
             this.lblNguoidat.Text = "Người đặt sân: Chu Sau";
             // 
-            // btnDatLai
-            // 
-            this.btnDatLai.Appearance.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDatLai.Appearance.Options.UseFont = true;
-            this.btnDatLai.Enabled = false;
-            this.btnDatLai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDatLai.ImageOptions.Image")));
-            this.btnDatLai.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnDatLai.Location = new System.Drawing.Point(528, 72);
-            this.btnDatLai.Name = "btnDatLai";
-            this.btnDatLai.Size = new System.Drawing.Size(182, 49);
-            this.btnDatLai.TabIndex = 5;
-            this.btnDatLai.Text = "Đặt lại sân";
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton2.Location = new System.Drawing.Point(528, 127);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(182, 49);
-            this.simpleButton2.TabIndex = 6;
-            this.simpleButton2.Text = "Thoát";
-            // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numericUpDown1.Location = new System.Drawing.Point(429, 34);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(280, 29);
-            this.numericUpDown1.TabIndex = 0;
-            // 
             // frmThanhToan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1265, 670);
+            this.ClientSize = new System.Drawing.Size(1265, 668);
             this.ControlBox = false;
             this.Controls.Add(this.panelThongTin);
             this.Controls.Add(this.panelFWA);
@@ -484,6 +473,7 @@ namespace QLSanBongMini_Final
             this.panelThongTin.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupThanhToan)).EndInit();
             this.groupThanhToan.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nudGiamGia)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupInfoFWA)).EndInit();
             this.groupInfoFWA.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grid_view_fwa)).EndInit();
@@ -495,7 +485,6 @@ namespace QLSanBongMini_Final
             this.groupTTSan.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupKH)).EndInit();
             this.groupKH.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -528,8 +517,7 @@ namespace QLSanBongMini_Final
         private DevExpress.XtraEditors.LabelControl lblTongTien;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.SimpleButton btnTinhTien;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton btnDatLai;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private DevExpress.XtraEditors.SimpleButton btnThoat;
+        private System.Windows.Forms.NumericUpDown nudGiamGia;
     }
 }

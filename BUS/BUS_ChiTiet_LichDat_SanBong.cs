@@ -33,10 +33,22 @@ namespace BUS
         {
             return DAL_ChiTiet_LichDat_SanBong.Instance.Select();
         }
+        public DataTable Select(int ID)
+        {
+            return DAL_ChiTiet_LichDat_SanBong.Instance.Select(ID);
+        }
         public bool Update(int ID, int TrangThai)
         {
             return DAL_ChiTiet_LichDat_SanBong.Instance.Update(ID, TrangThai);
         }
+        public bool Update(int ID, int IDKhachHang, string GhiChu, int TrangThai)
+        {
+            return DAL_ChiTiet_LichDat_SanBong.Instance.Update(ID, IDKhachHang, GhiChu, TrangThai);
+        }
 
+        public DataTable Search(int ID_KH, int ID_KVSB, DateTime NgayDat)
+        {
+            return DAL_ChiTiet_LichDat_SanBong.Instance.Search(ID_KH, ID_KVSB, NgayDat);
+        }
     }
 }

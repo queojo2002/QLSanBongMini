@@ -33,30 +33,30 @@ namespace QLSanBongMini_Final
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLy_SanBong));
             this.panel_top = new DevExpress.XtraEditors.PanelControl();
             this.group_search = new DevExpress.XtraEditors.GroupControl();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.btnTaiLai = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.de_NgayLoc = new DevExpress.XtraEditors.DateEdit();
             this.btnLoc = new DevExpress.XtraEditors.SimpleButton();
-            this.ce_loaisan = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cbeTenKVSB = new DevExpress.XtraEditors.ComboBoxEdit();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.cbeTenKH = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.cbeSDTKH = new DevExpress.XtraEditors.ComboBoxEdit();
             this.panel_fill = new DevExpress.XtraEditors.PanelControl();
             this.flow_1 = new System.Windows.Forms.FlowLayoutPanel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.cbeTenKH = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.cbeSDTKH = new DevExpress.XtraEditors.ComboBoxEdit();
             ((System.ComponentModel.ISupportInitialize)(this.panel_top)).BeginInit();
             this.panel_top.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.group_search)).BeginInit();
             this.group_search.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.de_NgayLoc.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.de_NgayLoc.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ce_loaisan.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_fill)).BeginInit();
-            this.panel_fill.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cbeTenKVSB.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbeTenKH.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbeSDTKH.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel_fill)).BeginInit();
+            this.panel_fill.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel_top
@@ -77,7 +77,7 @@ namespace QLSanBongMini_Final
             this.group_search.Controls.Add(this.labelControl1);
             this.group_search.Controls.Add(this.de_NgayLoc);
             this.group_search.Controls.Add(this.btnLoc);
-            this.group_search.Controls.Add(this.ce_loaisan);
+            this.group_search.Controls.Add(this.cbeTenKVSB);
             this.group_search.Controls.Add(this.labelControl2);
             this.group_search.Controls.Add(this.cbeTenKH);
             this.group_search.Controls.Add(this.cbeSDTKH);
@@ -88,6 +88,48 @@ namespace QLSanBongMini_Final
             this.group_search.Size = new System.Drawing.Size(1250, 119);
             this.group_search.TabIndex = 6;
             this.group_search.Text = "Lọc";
+            // 
+            // btnTaiLai
+            // 
+            this.btnTaiLai.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTaiLai.Appearance.Options.UseFont = true;
+            this.btnTaiLai.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnTaiLai.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnTaiLai.ImageOptions.SvgImage")));
+            this.btnTaiLai.Location = new System.Drawing.Point(1130, 36);
+            this.btnTaiLai.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.btnTaiLai.Name = "btnTaiLai";
+            this.btnTaiLai.Size = new System.Drawing.Size(113, 68);
+            this.btnTaiLai.TabIndex = 5;
+            this.btnTaiLai.Text = "Tải lại !!";
+            this.btnTaiLai.Click += new System.EventHandler(this.btnTaiLai_Click);
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Appearance.Options.UseTextOptions = true;
+            this.labelControl4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl4.Location = new System.Drawing.Point(470, 77);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(186, 25);
+            this.labelControl4.TabIndex = 7;
+            this.labelControl4.Text = "Lọc theo sđt khách hàng: ";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Appearance.Options.UseTextOptions = true;
+            this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.labelControl3.Location = new System.Drawing.Point(470, 36);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(186, 25);
+            this.labelControl3.TabIndex = 6;
+            this.labelControl3.Text = "Lọc theo tên khách hàng: ";
             // 
             // labelControl1
             // 
@@ -102,19 +144,6 @@ namespace QLSanBongMini_Final
             this.labelControl1.Size = new System.Drawing.Size(112, 25);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Lọc theo ngày: ";
-            // 
-            // btnTaiLai
-            // 
-            this.btnTaiLai.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTaiLai.Appearance.Options.UseFont = true;
-            this.btnTaiLai.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnTaiLai.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_reload.ImageOptions.SvgImage")));
-            this.btnTaiLai.Location = new System.Drawing.Point(1130, 36);
-            this.btnTaiLai.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.btnTaiLai.Name = "btnTaiLai";
-            this.btnTaiLai.Size = new System.Drawing.Size(113, 68);
-            this.btnTaiLai.TabIndex = 5;
-            this.btnTaiLai.Text = "Tải lại !!";
             // 
             // de_NgayLoc
             // 
@@ -138,26 +167,27 @@ namespace QLSanBongMini_Final
             this.btnLoc.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLoc.Appearance.Options.UseFont = true;
             this.btnLoc.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnLoc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_loc.ImageOptions.SvgImage")));
+            this.btnLoc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLoc.ImageOptions.SvgImage")));
             this.btnLoc.Location = new System.Drawing.Point(1011, 36);
             this.btnLoc.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
             this.btnLoc.Name = "btnLoc";
             this.btnLoc.Size = new System.Drawing.Size(113, 68);
             this.btnLoc.TabIndex = 2;
             this.btnLoc.Text = "Lọc !!";
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
-            // ce_loaisan
+            // cbeTenKVSB
             // 
-            this.ce_loaisan.Location = new System.Drawing.Point(210, 76);
-            this.ce_loaisan.Name = "ce_loaisan";
-            this.ce_loaisan.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.ce_loaisan.Properties.Appearance.Options.UseFont = true;
-            this.ce_loaisan.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.ce_loaisan.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.cbeTenKVSB.Location = new System.Drawing.Point(210, 76);
+            this.cbeTenKVSB.Name = "cbeTenKVSB";
+            this.cbeTenKVSB.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cbeTenKVSB.Properties.Appearance.Options.UseFont = true;
+            this.cbeTenKVSB.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.cbeTenKVSB.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.ce_loaisan.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.ce_loaisan.Size = new System.Drawing.Size(254, 28);
-            this.ce_loaisan.TabIndex = 4;
+            this.cbeTenKVSB.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbeTenKVSB.Size = new System.Drawing.Size(254, 28);
+            this.cbeTenKVSB.TabIndex = 4;
             // 
             // labelControl2
             // 
@@ -172,6 +202,44 @@ namespace QLSanBongMini_Final
             this.labelControl2.Size = new System.Drawing.Size(194, 25);
             this.labelControl2.TabIndex = 3;
             this.labelControl2.Text = "Lọc theo khu vực sân bóng: ";
+            // 
+            // cbeTenKH
+            // 
+            this.cbeTenKH.Location = new System.Drawing.Point(662, 36);
+            this.cbeTenKH.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.cbeTenKH.Name = "cbeTenKH";
+            this.cbeTenKH.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cbeTenKH.Properties.Appearance.Options.UseFont = true;
+            this.cbeTenKH.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.cbeTenKH.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbeTenKH.Properties.DisplayFormat.FormatString = "d";
+            this.cbeTenKH.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.cbeTenKH.Properties.EditFormat.FormatString = "d";
+            this.cbeTenKH.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.cbeTenKH.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbeTenKH.Size = new System.Drawing.Size(343, 28);
+            this.cbeTenKH.TabIndex = 8;
+            this.cbeTenKH.SelectedIndexChanged += new System.EventHandler(this.cbeTenKH_SelectedIndexChanged);
+            // 
+            // cbeSDTKH
+            // 
+            this.cbeSDTKH.Location = new System.Drawing.Point(662, 76);
+            this.cbeSDTKH.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
+            this.cbeSDTKH.Name = "cbeSDTKH";
+            this.cbeSDTKH.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cbeSDTKH.Properties.Appearance.Options.UseFont = true;
+            this.cbeSDTKH.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.cbeSDTKH.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbeSDTKH.Properties.DisplayFormat.FormatString = "d";
+            this.cbeSDTKH.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.cbeSDTKH.Properties.EditFormat.FormatString = "d";
+            this.cbeSDTKH.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
+            this.cbeSDTKH.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
+            this.cbeSDTKH.Size = new System.Drawing.Size(343, 28);
+            this.cbeSDTKH.TabIndex = 9;
+            this.cbeSDTKH.SelectedIndexChanged += new System.EventHandler(this.cbeSDTKH_SelectedIndexChanged);
             // 
             // panel_fill
             // 
@@ -192,70 +260,6 @@ namespace QLSanBongMini_Final
             this.flow_1.Size = new System.Drawing.Size(1250, 429);
             this.flow_1.TabIndex = 0;
             // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseTextOptions = true;
-            this.labelControl3.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl3.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl3.Location = new System.Drawing.Point(470, 36);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(186, 25);
-            this.labelControl3.TabIndex = 6;
-            this.labelControl3.Text = "Lọc theo tên khách hàng: ";
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Appearance.Options.UseTextOptions = true;
-            this.labelControl4.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.labelControl4.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.labelControl4.Location = new System.Drawing.Point(470, 77);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(186, 25);
-            this.labelControl4.TabIndex = 7;
-            this.labelControl4.Text = "Lọc theo sđt khách hàng: ";
-            // 
-            // cbeTenKH
-            // 
-            this.cbeTenKH.Location = new System.Drawing.Point(662, 36);
-            this.cbeTenKH.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.cbeTenKH.Name = "cbeTenKH";
-            this.cbeTenKH.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cbeTenKH.Properties.Appearance.Options.UseFont = true;
-            this.cbeTenKH.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.cbeTenKH.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbeTenKH.Properties.DisplayFormat.FormatString = "d";
-            this.cbeTenKH.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.cbeTenKH.Properties.EditFormat.FormatString = "d";
-            this.cbeTenKH.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.cbeTenKH.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cbeTenKH.Size = new System.Drawing.Size(343, 28);
-            this.cbeTenKH.TabIndex = 8;
-            // 
-            // cbeSDTKH
-            // 
-            this.cbeSDTKH.Location = new System.Drawing.Point(662, 76);
-            this.cbeSDTKH.Margin = new System.Windows.Forms.Padding(3, 13, 3, 3);
-            this.cbeSDTKH.Name = "cbeSDTKH";
-            this.cbeSDTKH.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cbeSDTKH.Properties.Appearance.Options.UseFont = true;
-            this.cbeSDTKH.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
-            this.cbeSDTKH.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cbeSDTKH.Properties.DisplayFormat.FormatString = "d";
-            this.cbeSDTKH.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.cbeSDTKH.Properties.EditFormat.FormatString = "d";
-            this.cbeSDTKH.Properties.EditFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
-            this.cbeSDTKH.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
-            this.cbeSDTKH.Size = new System.Drawing.Size(343, 28);
-            this.cbeSDTKH.TabIndex = 9;
-            // 
             // frmQuanLy_SanBong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,11 +277,11 @@ namespace QLSanBongMini_Final
             this.group_search.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.de_NgayLoc.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.de_NgayLoc.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ce_loaisan.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.panel_fill)).EndInit();
-            this.panel_fill.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cbeTenKVSB.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbeTenKH.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cbeSDTKH.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.panel_fill)).EndInit();
+            this.panel_fill.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -290,7 +294,7 @@ namespace QLSanBongMini_Final
         private DevExpress.XtraEditors.SimpleButton btnTaiLai;
         private DevExpress.XtraEditors.DateEdit de_NgayLoc;
         private DevExpress.XtraEditors.SimpleButton btnLoc;
-        private DevExpress.XtraEditors.ComboBoxEdit ce_loaisan;
+        private DevExpress.XtraEditors.ComboBoxEdit cbeTenKVSB;
         private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.PanelControl panel_fill;
         private System.Windows.Forms.FlowLayoutPanel flow_1;

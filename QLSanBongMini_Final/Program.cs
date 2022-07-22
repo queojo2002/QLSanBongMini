@@ -18,7 +18,7 @@ namespace QLSanBongMini_Final
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmThanhToan());
+            Application.Run(new frmTrangChu());
         }
     }
 }

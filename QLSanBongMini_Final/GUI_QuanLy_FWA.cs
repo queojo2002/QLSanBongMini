@@ -28,12 +28,11 @@ namespace QLSanBongMini_Final
         {
             Load_FWA();
         }
-        /* private void btnNhaplai_Click(object sender, EventArgs e)
-         {
-             txtTen.Text = "";
-             numricGiaTien.Value = 0;
-             pic_1.Image = null;
-         }*/
+        private void btnTaiLai_Click(object sender, EventArgs e)
+        {
+            Load_FWA();
+        }
+       
 
 
         public void Load_FWA()
@@ -50,8 +49,20 @@ namespace QLSanBongMini_Final
             }
         }
 
+        public void Load_FWA(DataTable Get_FWA)
+        {
+            flow_ShowFWA.Controls.Clear();
+            Flow_ThemMoi();
+            if (Get_FWA != null)
+            {
+                for (int i = 0; i < Get_FWA.Rows.Count; i++)
+                {
+                    Flow_Add_FWA(Get_FWA.Rows[i]["ID"].ToString(), Get_FWA.Rows[i]["TenFWA"].ToString(), int.Parse(Get_FWA.Rows[i]["GiaTien"].ToString()).ToString("c0", CultureInfo.GetCultureInfo("vi-VN")), Base64ToImage(Get_FWA.Rows[i]["image"].ToString()));
+                }
+            }
+        }
 
-
+       
 
 
 
@@ -184,6 +195,7 @@ namespace QLSanBongMini_Final
             Pic_Add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             Pic_Add.TabStop = false;
             Pic_Add.Image = IMG;
+            Pic_Add.Click += Show_Edit_FWA;
             flow_ShowFWA.Controls.Add(Panel_Img_Add);
         }
 
@@ -199,7 +211,14 @@ namespace QLSanBongMini_Final
         }
 
 
-
+        public void Show_Edit_FWA(object sender, EventArgs e)
+        {
+            PictureBox Click = (PictureBox)sender;
+            frmQuanLy_FWA_Chinhsua frmQuanLy_FWA_Chinhsua = new frmQuanLy_FWA_Chinhsua(int.Parse(Click.Name));
+            frmQuanLy_FWA_Chinhsua.ShowDialog();
+            Load_FWA();
+            this.Show();
+        }
         public void Show_FWA_ADD(object sender, EventArgs e)
         {
             frmQuanLy_FWA_Them fwa_add = new frmQuanLy_FWA_Them();
@@ -208,5 +227,28 @@ namespace QLSanBongMini_Final
             this.Show();
         }
 
+        private void btnLoc_Click(object sender, EventArgs e)
+        {
+            int IDLoaiFWA = -1;
+            if (cbeLoaiFWA.Text == "Nước uống")
+            {
+                IDLoaiFWA = 2;
+            }else if (cbeLoaiFWA.Text == "Thức ăn")
+            {
+                IDLoaiFWA = 3;
+            }
+            else if (cbeLoaiFWA.Text == "Phụ kiện")
+            {
+                IDLoaiFWA = 1;
+            }
+
+            if (IDLoaiFWA != -1)
+            {
+                Load_FWA(BUS_FWA.Instance.Select_By_IDLoaiFWA(IDLoaiFWA));
+            }
+
+        }
+
+      
     }
 }

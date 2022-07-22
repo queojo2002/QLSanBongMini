@@ -358,7 +358,7 @@ namespace QLSanBongMini_Final
             // 
             // deDenNgay
             // 
-            this.deDenNgay.EditValue = null;
+            this.deDenNgay.EditValue = new System.DateTime(2022, 7, 21, 10, 30, 34, 231);
             this.deDenNgay.Location = new System.Drawing.Point(428, 30);
             this.deDenNgay.Name = "deDenNgay";
             this.deDenNgay.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -373,7 +373,7 @@ namespace QLSanBongMini_Final
             // 
             // deTuNgay
             // 
-            this.deTuNgay.EditValue = null;
+            this.deTuNgay.EditValue = new System.DateTime(2022, 7, 21, 10, 30, 27, 779);
             this.deTuNgay.Location = new System.Drawing.Point(156, 30);
             this.deTuNgay.Name = "deTuNgay";
             this.deTuNgay.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

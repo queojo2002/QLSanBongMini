@@ -31,8 +31,8 @@ namespace QLSanBongMini_Final
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuanLy_FWA));
             this.panel_top = new DevExpress.XtraEditors.PanelControl();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnTaiLai = new DevExpress.XtraEditors.SimpleButton();
+            this.btnLoc = new DevExpress.XtraEditors.SimpleButton();
             this.lblXemTheoLoai = new DevExpress.XtraEditors.LabelControl();
             this.cbeLoaiFWA = new DevExpress.XtraEditors.ComboBoxEdit();
             this.flow_ShowFWA = new System.Windows.Forms.FlowLayoutPanel();
@@ -46,8 +46,8 @@ namespace QLSanBongMini_Final
             // 
             // panel_top
             // 
-            this.panel_top.Controls.Add(this.simpleButton2);
-            this.panel_top.Controls.Add(this.simpleButton1);
+            this.panel_top.Controls.Add(this.btnTaiLai);
+            this.panel_top.Controls.Add(this.btnLoc);
             this.panel_top.Controls.Add(this.lblXemTheoLoai);
             this.panel_top.Controls.Add(this.cbeLoaiFWA);
             this.panel_top.Dock = System.Windows.Forms.DockStyle.Top;
@@ -56,31 +56,33 @@ namespace QLSanBongMini_Final
             this.panel_top.Size = new System.Drawing.Size(1151, 61);
             this.panel_top.TabIndex = 0;
             // 
-            // simpleButton2
+            // btnTaiLai
             // 
-            this.simpleButton2.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.simpleButton2.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.simpleButton2.Appearance.Options.UseFont = true;
-            this.simpleButton2.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
-            this.simpleButton2.Location = new System.Drawing.Point(643, 3);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(141, 52);
-            this.simpleButton2.TabIndex = 4;
-            this.simpleButton2.Text = "Tải lại !!!";
+            this.btnTaiLai.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnTaiLai.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTaiLai.Appearance.Options.UseFont = true;
+            this.btnTaiLai.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnTaiLai.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.btnTaiLai.Location = new System.Drawing.Point(643, 3);
+            this.btnTaiLai.Name = "btnTaiLai";
+            this.btnTaiLai.Size = new System.Drawing.Size(141, 52);
+            this.btnTaiLai.TabIndex = 4;
+            this.btnTaiLai.Text = "Tải lại !!!";
+            this.btnTaiLai.Click += new System.EventHandler(this.btnTaiLai_Click);
             // 
-            // simpleButton1
+            // btnLoc
             // 
-            this.simpleButton1.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(496, 5);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(141, 50);
-            this.simpleButton1.TabIndex = 3;
-            this.simpleButton1.Text = "Lọc !!!";
+            this.btnLoc.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnLoc.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnLoc.Appearance.Options.UseFont = true;
+            this.btnLoc.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnLoc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btnLoc.Location = new System.Drawing.Point(496, 5);
+            this.btnLoc.Name = "btnLoc";
+            this.btnLoc.Size = new System.Drawing.Size(141, 50);
+            this.btnLoc.TabIndex = 3;
+            this.btnLoc.Text = "Lọc !!!";
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
             // lblXemTheoLoai
             // 
@@ -159,7 +161,7 @@ namespace QLSanBongMini_Final
         private DevExpress.XtraEditors.PanelControl panel_fill;
         private DevExpress.XtraEditors.LabelControl lblXemTheoLoai;
         private DevExpress.XtraEditors.ComboBoxEdit cbeLoaiFWA;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnTaiLai;
+        private DevExpress.XtraEditors.SimpleButton btnLoc;
     }
 }

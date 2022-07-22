@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_Bill.cs" />
+    <Compile Include="DAL_ChiTietBill.cs" />
     <Compile Include="DAL_ChiTiet_LichDat_SanBong.cs" />
     <Compile Include="DAL_DB.cs" />
     <Compile Include="DAL_FWA.cs" />
