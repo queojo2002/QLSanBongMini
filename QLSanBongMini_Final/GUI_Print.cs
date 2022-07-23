@@ -32,6 +32,19 @@ namespace QLSanBongMini_Final
             documentViewer1.DocumentSource = a;
             a.CreateDocument();
         }
+        public frmPrint(string Text_DoanhThu, List<DTO_DoanhThu> DoanhThu)
+        {
+            InitializeComponent();
+            DoanhThu_Report a = new DoanhThu_Report();
+            foreach (DevExpress.XtraReports.Parameters.Parameter p in a.Parameters)
+            {
+                p.Visible = false;
+            }
+            a.Set_Para(Text_DoanhThu, DoanhThu);
+            documentViewer1.DocumentSource = a;
+            a.CreateDocument();
+        }
+
 
     }
 }

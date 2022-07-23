@@ -50,10 +50,14 @@ namespace BUS
         {
             return DAL_KhachHang.Instance.Update(ID, HoTen, SDT, FB, SoLanDat);
         }
-
+        public bool Update_SoLanDat(int ID)
+        {
+            return DAL_KhachHang.Instance.Update_SoLanDat(ID);
+        }
         public bool Delete_By_ID(int ID)
         {
             return DAL_KhachHang.Instance.Delete_By_ID(ID);
         }
+
     }
 }

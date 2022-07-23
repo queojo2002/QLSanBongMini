@@ -69,7 +69,7 @@ namespace QLSanBongMini_Final
             this.btnThemKH.Location = new System.Drawing.Point(455, 26);
             this.btnThemKH.Name = "btnThemKH";
             this.btnThemKH.Size = new System.Drawing.Size(177, 58);
-            this.btnThemKH.TabIndex = 14;
+            this.btnThemKH.TabIndex = 5;
             this.btnThemKH.Text = "Thêm mới khách hàng";
             this.btnThemKH.Click += new System.EventHandler(this.btnThemKH_Click);
             // 
@@ -96,7 +96,7 @@ namespace QLSanBongMini_Final
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cbeSDTKH.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cbeSDTKH.Size = new System.Drawing.Size(295, 26);
-            this.cbeSDTKH.TabIndex = 3;
+            this.cbeSDTKH.TabIndex = 2;
             this.cbeSDTKH.SelectedIndexChanged += new System.EventHandler(this.cbeSDTKH_SelectedIndexChanged);
             // 
             // labelControl14
@@ -122,19 +122,19 @@ namespace QLSanBongMini_Final
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cbeTenKH.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cbeTenKH.Size = new System.Drawing.Size(295, 26);
-            this.cbeTenKH.TabIndex = 2;
+            this.cbeTenKH.TabIndex = 1;
             this.cbeTenKH.SelectedIndexChanged += new System.EventHandler(this.cbeTenKH_SelectedIndexChanged);
             // 
             // btnDatLai
             // 
             this.btnDatLai.Appearance.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDatLai.Appearance.Options.UseFont = true;
-            this.btnDatLai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnDatLai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDatLai.ImageOptions.Image")));
             this.btnDatLai.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnDatLai.Location = new System.Drawing.Point(156, 132);
             this.btnDatLai.Name = "btnDatLai";
             this.btnDatLai.Size = new System.Drawing.Size(476, 54);
-            this.btnDatLai.TabIndex = 20;
+            this.btnDatLai.TabIndex = 4;
             this.btnDatLai.Text = "Đặt lại";
             this.btnDatLai.Click += new System.EventHandler(this.btnDatLai_Click);
             // 
@@ -145,7 +145,7 @@ namespace QLSanBongMini_Final
             this.txtGhiChu.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGhiChu.Properties.Appearance.Options.UseFont = true;
             this.txtGhiChu.Size = new System.Drawing.Size(476, 26);
-            this.txtGhiChu.TabIndex = 19;
+            this.txtGhiChu.TabIndex = 3;
             // 
             // lblGhiChu
             // 

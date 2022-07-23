@@ -37,6 +37,36 @@ namespace DAL
         }
 
 
+        public DataTable Select_By_ID(int ID)
+        {
+            return DAL_DB.Instance.ThuThi_Query("SELECT LichDat_SanBong.ID, KhuVuc_SanBong.Ten, KhachHang.HoTen, KhachHang.SDT, LichDat_SanBong.NgayDat_BatDau, LichDat_SanBong.NgayDat_KetThuc, LichDat_SanBong.KhungGioDat_BatDau, LichDat_SanBong.KhungGioDat_KetThuc FROM LichDat_SanBong INNER JOIN KhuVuc_SanBong ON LichDat_SanBong.ID_KVSB = KhuVuc_SanBong.ID INNER JOIN KhachHang ON LichDat_SanBong.ID_KH = KhachHang.ID WHERE(LichDat_SanBong.ID = '"+ID+"')");
+        }
+
+
+        public bool Delete_By_ID(int ID)
+        {
+            return DAL_DB.Instance.ThuThi_NonQuery("DELETE FROM [dbo].[LichDat_SanBong] WHERE ID = '" + ID + "'") > 0 ? true : false;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #region
+
 
         public string Insert_CoDinh(int ID_KVSB, int ID_KH, DateTime NgayDat_BatDau, DateTime NgayDat_KetThuc, TimeSpan KhungGio_BatDau, TimeSpan KhungGio_KetThuc, bool Thu_2, bool Thu_3, bool Thu_4, bool Thu_5, bool Thu_6, bool Thu_7, bool CN, string GhiChu)
         {
@@ -230,10 +260,6 @@ namespace DAL
         }
 
 
-
-
-
-
         public bool Check_KhungGio_KVSB_NguoiDung(TimeSpan KhungGio_BatDau_NguoiDung, TimeSpan KhungGio_KetThuc_NguoiDung, TimeSpan KhungGio_BatDau_SQL, TimeSpan KhungGio_KetThuc_SQL)
         {
             if ((KhungGio_BatDau_NguoiDung >= KhungGio_BatDau_SQL && KhungGio_BatDau_NguoiDung <= KhungGio_KetThuc_SQL) && (KhungGio_KetThuc_NguoiDung >= KhungGio_BatDau_SQL && KhungGio_KetThuc_NguoiDung <= KhungGio_KetThuc_SQL))
@@ -300,6 +326,9 @@ namespace DAL
                 return "Error";
             }
         }
+
+
+        #endregion // xử lý lịch đặt
 
     }
 }

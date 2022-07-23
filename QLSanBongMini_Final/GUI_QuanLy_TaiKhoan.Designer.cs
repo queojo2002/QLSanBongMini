@@ -46,6 +46,7 @@ namespace QLSanBongMini_Final
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(920, 607);
             this.Controls.Add(this.flow_fill);
+            this.IconOptions.Image = global::QLSanBongMini_Final.Properties.Resources.user;
             this.MaximizeBox = false;
             this.Name = "frmQuanLy_TaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

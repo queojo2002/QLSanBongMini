@@ -42,6 +42,9 @@ namespace QLSanBongMini_Final
             {
                 rp_admin.Visible = false;
                 rp_nhanvien.Visible = false;
+            }else if (ChucVu == "FullQuyen")
+            {
+
             }
         }
         private void btn_mnKhuVucSanBong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -124,6 +127,11 @@ namespace QLSanBongMini_Final
             {
                 this.Close();
             }
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

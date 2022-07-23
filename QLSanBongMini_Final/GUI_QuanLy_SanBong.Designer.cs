@@ -267,6 +267,7 @@ namespace QLSanBongMini_Final
             this.ClientSize = new System.Drawing.Size(1254, 556);
             this.Controls.Add(this.panel_fill);
             this.Controls.Add(this.panel_top);
+            this.IconOptions.SvgImage = global::QLSanBongMini_Final.Properties.Resources.football_icon;
             this.Name = "frmQuanLy_SanBong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý sân bóng";

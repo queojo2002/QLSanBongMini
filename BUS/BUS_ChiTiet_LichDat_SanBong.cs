@@ -37,6 +37,10 @@ namespace BUS
         {
             return DAL_ChiTiet_LichDat_SanBong.Instance.Select(ID);
         }
+        public DataTable Select_By_IDLDSB(int ID_LDSB)
+        {
+            return DAL_ChiTiet_LichDat_SanBong.Instance.Select_By_IDLDSB(ID_LDSB);
+        }
         public bool Update(int ID, int TrangThai)
         {
             return DAL_ChiTiet_LichDat_SanBong.Instance.Update(ID, TrangThai);
@@ -49,6 +53,10 @@ namespace BUS
         public DataTable Search(int ID_KH, int ID_KVSB, DateTime NgayDat)
         {
             return DAL_ChiTiet_LichDat_SanBong.Instance.Search(ID_KH, ID_KVSB, NgayDat);
+        }
+        public bool Delete_By_IDLDSB(int ID_LDSB)
+        {
+            return DAL_ChiTiet_LichDat_SanBong.Instance.Delete_By_IDLDSB(ID_LDSB);
         }
     }
 }

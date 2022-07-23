@@ -62,11 +62,11 @@ namespace QLSanBongMini_Final
             this.btnTaiLai.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTaiLai.Appearance.Options.UseFont = true;
             this.btnTaiLai.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnTaiLai.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.btnTaiLai.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnTaiLai.ImageOptions.SvgImage")));
             this.btnTaiLai.Location = new System.Drawing.Point(643, 3);
             this.btnTaiLai.Name = "btnTaiLai";
             this.btnTaiLai.Size = new System.Drawing.Size(141, 52);
-            this.btnTaiLai.TabIndex = 4;
+            this.btnTaiLai.TabIndex = 3;
             this.btnTaiLai.Text = "Tải lại !!!";
             this.btnTaiLai.Click += new System.EventHandler(this.btnTaiLai_Click);
             // 
@@ -76,11 +76,11 @@ namespace QLSanBongMini_Final
             this.btnLoc.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLoc.Appearance.Options.UseFont = true;
             this.btnLoc.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnLoc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
+            this.btnLoc.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnLoc.ImageOptions.SvgImage")));
             this.btnLoc.Location = new System.Drawing.Point(496, 5);
             this.btnLoc.Name = "btnLoc";
             this.btnLoc.Size = new System.Drawing.Size(141, 50);
-            this.btnLoc.TabIndex = 3;
+            this.btnLoc.TabIndex = 2;
             this.btnLoc.Text = "Lọc !!!";
             this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
@@ -113,7 +113,7 @@ namespace QLSanBongMini_Final
             "Phụ kiện"});
             this.cbeLoaiFWA.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cbeLoaiFWA.Size = new System.Drawing.Size(307, 32);
-            this.cbeLoaiFWA.TabIndex = 2;
+            this.cbeLoaiFWA.TabIndex = 1;
             // 
             // flow_ShowFWA
             // 
@@ -139,6 +139,7 @@ namespace QLSanBongMini_Final
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1155, 829);
             this.Controls.Add(this.panel_fill);
+            this.IconOptions.Image = global::QLSanBongMini_Final.Properties.Resources.image_food;
             this.MaximizeBox = false;
             this.Name = "frmQuanLy_FWA";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

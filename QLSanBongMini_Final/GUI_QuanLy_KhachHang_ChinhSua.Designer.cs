@@ -171,7 +171,7 @@ namespace QLSanBongMini_Final
             this.numricSoLanDat.Location = new System.Drawing.Point(149, 104);
             this.numricSoLanDat.Name = "numricSoLanDat";
             this.numricSoLanDat.Size = new System.Drawing.Size(460, 27);
-            this.numricSoLanDat.TabIndex = 19;
+            this.numricSoLanDat.TabIndex = 4;
             // 
             // frmQuanLy_KhachHang_ChinhSua
             // 
@@ -190,7 +190,7 @@ namespace QLSanBongMini_Final
             this.Controls.Add(this.txtTenKH);
             this.Controls.Add(this.labelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("frmQuanLy_KhachHang_ChinhSua.IconOptions.LargeImage")));
+            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmQuanLy_KhachHang_ChinhSua.IconOptions.SvgImage")));
             this.MaximizeBox = false;
             this.Name = "frmQuanLy_KhachHang_ChinhSua";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

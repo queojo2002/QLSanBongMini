@@ -148,7 +148,7 @@ namespace QLSanBongMini_Final
             this.btnThongKe.Location = new System.Drawing.Point(498, 7);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Size = new System.Drawing.Size(165, 96);
-            this.btnThongKe.TabIndex = 8;
+            this.btnThongKe.TabIndex = 2;
             this.btnThongKe.Text = "Thống kê";
             this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
@@ -161,7 +161,7 @@ namespace QLSanBongMini_Final
             this.btnIn.Location = new System.Drawing.Point(673, 58);
             this.btnIn.Name = "btnIn";
             this.btnIn.Size = new System.Drawing.Size(165, 45);
-            this.btnIn.TabIndex = 7;
+            this.btnIn.TabIndex = 4;
             this.btnIn.Text = "In doanh thu";
             this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
@@ -174,7 +174,7 @@ namespace QLSanBongMini_Final
             this.btnTailai.Location = new System.Drawing.Point(673, 7);
             this.btnTailai.Name = "btnTailai";
             this.btnTailai.Size = new System.Drawing.Size(165, 45);
-            this.btnTailai.TabIndex = 6;
+            this.btnTailai.TabIndex = 3;
             this.btnTailai.Text = "Tải lại";
             this.btnTailai.Click += new System.EventHandler(this.btnTailai_Click);
             // 

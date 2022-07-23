@@ -449,6 +449,7 @@ namespace QLSanBongMini_Final
                     return;
                 }else
                 {
+                    BUS_KhachHang.Instance.Update_SoLanDat(IDKH);
                     InHoaDon();
                     XtraMessageBox.Show("Thanh Toán Thành Công !!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();

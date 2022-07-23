@@ -105,7 +105,7 @@ namespace QLSanBongMini_Final
             this.txtUsername.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtUsername.Properties.Appearance.Options.UseFont = true;
             this.txtUsername.Size = new System.Drawing.Size(240, 26);
-            this.txtUsername.TabIndex = 4;
+            this.txtUsername.TabIndex = 1;
             // 
             // txtPassword
             // 
@@ -114,7 +114,7 @@ namespace QLSanBongMini_Final
             this.txtPassword.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtPassword.Properties.Appearance.Options.UseFont = true;
             this.txtPassword.Size = new System.Drawing.Size(240, 26);
-            this.txtPassword.TabIndex = 5;
+            this.txtPassword.TabIndex = 2;
             // 
             // txtDisplayName
             // 
@@ -123,7 +123,7 @@ namespace QLSanBongMini_Final
             this.txtDisplayName.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtDisplayName.Properties.Appearance.Options.UseFont = true;
             this.txtDisplayName.Size = new System.Drawing.Size(240, 26);
-            this.txtDisplayName.TabIndex = 6;
+            this.txtDisplayName.TabIndex = 3;
             // 
             // cbeChucVu
             // 
@@ -140,7 +140,7 @@ namespace QLSanBongMini_Final
             "ADMIN"});
             this.cbeChucVu.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.cbeChucVu.Size = new System.Drawing.Size(240, 26);
-            this.cbeChucVu.TabIndex = 7;
+            this.cbeChucVu.TabIndex = 4;
             // 
             // btnADD
             // 
@@ -150,7 +150,7 @@ namespace QLSanBongMini_Final
             this.btnADD.Location = new System.Drawing.Point(381, 9);
             this.btnADD.Name = "btnADD";
             this.btnADD.Size = new System.Drawing.Size(168, 62);
-            this.btnADD.TabIndex = 8;
+            this.btnADD.TabIndex = 5;
             this.btnADD.Text = "Thêm mới !!!";
             this.btnADD.Click += new System.EventHandler(this.btnADD_Click);
             // 
@@ -162,7 +162,7 @@ namespace QLSanBongMini_Final
             this.btnEDIT.Location = new System.Drawing.Point(381, 81);
             this.btnEDIT.Name = "btnEDIT";
             this.btnEDIT.Size = new System.Drawing.Size(168, 62);
-            this.btnEDIT.TabIndex = 9;
+            this.btnEDIT.TabIndex = 6;
             this.btnEDIT.Text = "Chỉnh sửa !!!";
             this.btnEDIT.Click += new System.EventHandler(this.btnEDIT_Click);
             // 
@@ -182,6 +182,7 @@ namespace QLSanBongMini_Final
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.IconOptions.Image = global::QLSanBongMini_Final.Properties.Resources.user;
             this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("frmQuanLy_TaiKhoan_Them_ChinhSua.IconOptions.LargeImage")));
             this.MaximizeBox = false;
             this.Name = "frmQuanLy_TaiKhoan_Them_ChinhSua";

@@ -188,7 +188,7 @@ namespace QLSanBongMini_Final
             this.Controls.Add(this.labelControl1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmQuanLy_SanBong_Them.IconOptions.SvgImage")));
+            this.IconOptions.Image = global::QLSanBongMini_Final.Properties.Resources.sanbong;
             this.MaximizeBox = false;
             this.Name = "frmQuanLy_KV_SanBong_Them";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -30,8 +30,8 @@ namespace QLSanBongMini_Final
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTrangChu));
             DevExpress.XtraBars.BarButtonItem btnDangXuat2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTrangChu));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btn_QuanLySanBong = new DevExpress.XtraBars.BarButtonItem();
             this.btn_mnLichSanBong = new DevExpress.XtraBars.BarButtonItem();
@@ -40,33 +40,41 @@ namespace QLSanBongMini_Final
             this.btn_mnDoanhThu = new DevExpress.XtraBars.BarButtonItem();
             this.btn_mnTaiKhoan = new DevExpress.XtraBars.BarButtonItem();
             this.btn_mnKhachHang = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barCheckItem1 = new DevExpress.XtraBars.BarCheckItem();
+            this.btnDangXuat1 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDangXuat3 = new DevExpress.XtraBars.BarButtonItem();
             this.rp_nhanvien = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpg_quanlysanbong = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpg_themlichdatsanbong = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpg_dangxuat = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rp_manager = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpg_mnKhachHang = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rgp_fwa = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpg_quanlykhuvucsanbong = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rgp_dangxuat1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rp_admin = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.rpg_mndoanhthu = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rpg_mntaikhoan = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.rpg_dangxuat2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.Document_Manager_1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barCheckItem1 = new DevExpress.XtraBars.BarCheckItem();
-            this.rpg_dangxuat = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.btnDangXuat1 = new DevExpress.XtraBars.BarButtonItem();
-            this.rgp_dangxuat1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.rpg_dangxuat2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.btnDangXuat3 = new DevExpress.XtraBars.BarButtonItem();
             btnDangXuat2 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Document_Manager_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnDangXuat2
+            // 
+            btnDangXuat2.Caption = "Đăng xuất";
+            btnDangXuat2.Id = 14;
+            btnDangXuat2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDangXuat2.ImageOptions.SvgImage")));
+            btnDangXuat2.Name = "btnDangXuat2";
+            btnDangXuat2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat2_ItemClick);
             // 
             // ribbonControl1
             // 
@@ -96,6 +104,7 @@ namespace QLSanBongMini_Final
             this.rp_admin});
             this.ribbonControl1.Size = new System.Drawing.Size(1054, 177);
             this.ribbonControl1.StatusBar = this.ribbonStatusBar1;
+            this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // btn_QuanLySanBong
             // 
@@ -154,6 +163,40 @@ namespace QLSanBongMini_Final
             this.btn_mnKhachHang.Name = "btn_mnKhachHang";
             this.btn_mnKhachHang.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_mnKhachHang_ItemClick);
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Đăng xuất";
+            this.barButtonItem1.Id = 10;
+            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Id = 11;
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
+            // barCheckItem1
+            // 
+            this.barCheckItem1.Caption = "barCheckItem1";
+            this.barCheckItem1.Id = 12;
+            this.barCheckItem1.Name = "barCheckItem1";
+            // 
+            // btnDangXuat1
+            // 
+            this.btnDangXuat1.Caption = "Đăng xuất";
+            this.btnDangXuat1.Id = 13;
+            this.btnDangXuat1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDangXuat1.ImageOptions.SvgImage")));
+            this.btnDangXuat1.Name = "btnDangXuat1";
+            this.btnDangXuat1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat1_ItemClick);
+            // 
+            // btnDangXuat3
+            // 
+            this.btnDangXuat3.Caption = "Đăng xuất";
+            this.btnDangXuat3.Id = 15;
+            this.btnDangXuat3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDangXuat3.ImageOptions.SvgImage")));
+            this.btnDangXuat3.Name = "btnDangXuat3";
+            this.btnDangXuat3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat3_ItemClick);
+            // 
             // rp_nhanvien
             // 
             this.rp_nhanvien.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -177,6 +220,13 @@ namespace QLSanBongMini_Final
             this.rpg_themlichdatsanbong.ItemLinks.Add(this.btn_mnLichSanBong);
             this.rpg_themlichdatsanbong.Name = "rpg_themlichdatsanbong";
             this.rpg_themlichdatsanbong.Text = "Trang chức năng: Thêm lịch đặt sân bóng";
+            // 
+            // rpg_dangxuat
+            // 
+            this.rpg_dangxuat.AllowTextClipping = false;
+            this.rpg_dangxuat.ItemLinks.Add(this.btnDangXuat1);
+            this.rpg_dangxuat.Name = "rpg_dangxuat";
+            this.rpg_dangxuat.Text = "Đăng xuất";
             // 
             // rp_manager
             // 
@@ -210,6 +260,13 @@ namespace QLSanBongMini_Final
             this.rpg_quanlykhuvucsanbong.Name = "rpg_quanlykhuvucsanbong";
             this.rpg_quanlykhuvucsanbong.Text = "Trang chức năng: Quản lý khu vực sân bóng";
             // 
+            // rgp_dangxuat1
+            // 
+            this.rgp_dangxuat1.AllowTextClipping = false;
+            this.rgp_dangxuat1.ItemLinks.Add(btnDangXuat2);
+            this.rgp_dangxuat1.Name = "rgp_dangxuat1";
+            this.rgp_dangxuat1.Text = "Đăng xuất";
+            // 
             // rp_admin
             // 
             this.rp_admin.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -234,6 +291,13 @@ namespace QLSanBongMini_Final
             this.rpg_mntaikhoan.Name = "rpg_mntaikhoan";
             this.rpg_mntaikhoan.Text = "Trang chức năng: Quản lý tài khoản";
             // 
+            // rpg_dangxuat2
+            // 
+            this.rpg_dangxuat2.AllowTextClipping = false;
+            this.rpg_dangxuat2.ItemLinks.Add(this.btnDangXuat3);
+            this.rpg_dangxuat2.Name = "rpg_dangxuat2";
+            this.rpg_dangxuat2.Text = "Đăng xuất";
+            // 
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 549);
@@ -253,69 +317,6 @@ namespace QLSanBongMini_Final
             this.Document_Manager_1.View = this.tabbedView1;
             this.Document_Manager_1.ViewCollection.AddRange(new DevExpress.XtraBars.Docking2010.Views.BaseView[] {
             this.tabbedView1});
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Đăng xuất";
-            this.barButtonItem1.Id = 10;
-            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Id = 11;
-            this.barButtonItem2.Name = "barButtonItem2";
-            // 
-            // barCheckItem1
-            // 
-            this.barCheckItem1.Caption = "barCheckItem1";
-            this.barCheckItem1.Id = 12;
-            this.barCheckItem1.Name = "barCheckItem1";
-            // 
-            // rpg_dangxuat
-            // 
-            this.rpg_dangxuat.AllowTextClipping = false;
-            this.rpg_dangxuat.ItemLinks.Add(this.btnDangXuat1);
-            this.rpg_dangxuat.Name = "rpg_dangxuat";
-            this.rpg_dangxuat.Text = "Đăng xuất";
-            // 
-            // btnDangXuat1
-            // 
-            this.btnDangXuat1.Caption = "Đăng xuất";
-            this.btnDangXuat1.Id = 13;
-            this.btnDangXuat1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
-            this.btnDangXuat1.Name = "btnDangXuat1";
-            this.btnDangXuat1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat1_ItemClick);
-            // 
-            // rgp_dangxuat1
-            // 
-            this.rgp_dangxuat1.AllowTextClipping = false;
-            this.rgp_dangxuat1.ItemLinks.Add(btnDangXuat2);
-            this.rgp_dangxuat1.Name = "rgp_dangxuat1";
-            this.rgp_dangxuat1.Text = "Đăng xuất";
-            // 
-            // btnDangXuat2
-            // 
-            btnDangXuat2.Caption = "Đăng xuất";
-            btnDangXuat2.Id = 14;
-            btnDangXuat2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
-            btnDangXuat2.Name = "btnDangXuat2";
-            btnDangXuat2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat2_ItemClick);
-            // 
-            // rpg_dangxuat2
-            // 
-            this.rpg_dangxuat2.AllowTextClipping = false;
-            this.rpg_dangxuat2.ItemLinks.Add(this.btnDangXuat3);
-            this.rpg_dangxuat2.Name = "rpg_dangxuat2";
-            this.rpg_dangxuat2.Text = "Đăng xuất";
-            // 
-            // btnDangXuat3
-            // 
-            this.btnDangXuat3.Caption = "Đăng xuất";
-            this.btnDangXuat3.Id = 15;
-            this.btnDangXuat3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDangXuat3.ImageOptions.SvgImage")));
-            this.btnDangXuat3.Name = "btnDangXuat3";
-            this.btnDangXuat3.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDangXuat3_ItemClick);
             // 
             // frmTrangChu
             // 

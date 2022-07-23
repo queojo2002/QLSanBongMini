@@ -47,6 +47,10 @@ namespace BUS
         {
             return DAL_Bill.Instance.Select_Xem_DoanhThu(TuNgay, DenNgay);
         }
+        public DataTable Select_Xem_DoanhThu()
+        {
+            return DAL_Bill.Instance.Select_Xem_DoanhThu();
+        }
         public bool Insert(int IDCTLDSB, int IDKhachHang, DateTime NgayLap_Bill, int ThanhTien, int TrangThai)
         {
             return DAL_Bill.Instance.Insert(IDCTLDSB, IDKhachHang, NgayLap_Bill, ThanhTien, TrangThai);

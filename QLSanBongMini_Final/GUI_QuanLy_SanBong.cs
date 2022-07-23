@@ -271,11 +271,11 @@ namespace QLSanBongMini_Final
                 {
                     if (BUS_ChiTiet_LichDat_SanBong.Instance.Update(int.Parse(IDChiTietLichDatSanBong.Name.ToString()), 0) == true)
                     {
-                        XtraMessageBox.Show("Chuyển Trạng Thái Thành Công !", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        XtraMessageBox.Show("Hủy sân thành công !!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        XtraMessageBox.Show("Chuyển Trạng Thái Không Thành Công ! \n\nLỗi: Không Xác Định !", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        XtraMessageBox.Show("Hủy sân không thành công !!! \n\nLỗi: Không Xác Định !", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
 
                 }

@@ -56,6 +56,7 @@
     <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -151,6 +152,12 @@
     <Compile Include="GUI_QuanLy_KhuVucSanBong_Them.Designer.cs">
       <DependentUpon>GUI_QuanLy_KhuVucSanBong_Them.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_QuanLy_LichDatSanBong_XemChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_LichDatSanBong_XemChiTiet.Designer.cs">
+      <DependentUpon>GUI_QuanLy_LichDatSanBong_XemChiTiet.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_QuanLy_LichDat_SanBong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +249,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_QuanLy_KhuVucSanBong_Them.resx">
       <DependentUpon>GUI_QuanLy_KhuVucSanBong_Them.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLy_LichDatSanBong_XemChiTiet.resx">
+      <DependentUpon>GUI_QuanLy_LichDatSanBong_XemChiTiet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_QuanLy_LichDat_SanBong.resx">
       <DependentUpon>GUI_QuanLy_LichDat_SanBong.cs</DependentUpon>
@@ -355,6 +365,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sanbong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

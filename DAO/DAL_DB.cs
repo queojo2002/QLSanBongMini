@@ -5,14 +5,14 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Configuration;
 namespace DAL
 {
     public class DAL_DB
     {
         private static DAL_DB instance;
-
-        public static string conn_str = @"Data Source=MSI;Initial Catalog=QuanLySanBongMini;Integrated Security=True";
+        private static string get_cn_string = System.Configuration.ConfigurationManager.ConnectionStrings["connect_string"].ConnectionString;
+        private static string conn_str = get_cn_string;
 
         public static DAL_DB Instance
         {

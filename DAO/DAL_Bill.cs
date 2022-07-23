@@ -44,9 +44,17 @@ namespace DAL
             return DAL_DB.Instance.ThuThi_Query("Select * From [dbo].[HoaDon] Where IDCTLDSB = '" + ID + "'");
         }
 
+        /*  public DataTable Select_Xem_DoanhThu(DateTime TuNgay, DateTime DenNgay)
+          {
+              return DAL_DB.Instance.ThuThi_Query("SELECT HoaDon.* FROM HoaDon WHERE (TrangThai = 1) AND (CONVERT(date, NgayXuatBill) >= '" + TuNgay.ToString("yyyy-MM-dd") + "') AND (CONVERT(date, NgayXuatBill) <= '" + DenNgay.ToString("yyyy-MM-dd") + "')");
+          }*/
         public DataTable Select_Xem_DoanhThu(DateTime TuNgay, DateTime DenNgay)
         {
-            return DAL_DB.Instance.ThuThi_Query("SELECT HoaDon.* FROM HoaDon WHERE (TrangThai = 1) AND (CONVERT(date, NgayXuatBill) >= '" + TuNgay.ToString("yyyy-MM-dd") + "') AND (CONVERT(date, NgayXuatBill) <= '" + DenNgay.ToString("yyyy-MM-dd") + "')");
+            return DAL_DB.Instance.ThuThi_Query("SELECT KhuVuc_SanBong.Ten, HoaDon.NgayLapBill, HoaDon.NgayXuatBill, HoaDon.ThanhTien, HoaDon.GiamGia, KhachHang.HoTen, KhachHang.SDT, HoaDon.TrangThai FROM HoaDon INNER JOIN ChiTietLichDat_SanBong ON HoaDon.IDCTLDSB = ChiTietLichDat_SanBong.ID INNER JOIN KhachHang ON HoaDon.IDKhachHang = KhachHang.ID INNER JOIN KhuVuc_SanBong ON ChiTietLichDat_SanBong.ID_KVSB = KhuVuc_SanBong.ID WHERE(HoaDon.TrangThai = 1) AND(CONVERT(date, HoaDon.NgayXuatBill) >= '" + TuNgay.ToString("yyyy-MM-dd") + "') AND(CONVERT(date, HoaDon.NgayXuatBill) <= '" + DenNgay.ToString("yyyy-MM-dd") + "')");
+        }
+        public DataTable Select_Xem_DoanhThu()
+        {
+            return DAL_DB.Instance.ThuThi_Query("SELECT KhuVuc_SanBong.Ten, HoaDon.NgayLapBill, HoaDon.NgayXuatBill, HoaDon.ThanhTien, HoaDon.GiamGia, KhachHang.HoTen, KhachHang.SDT, HoaDon.TrangThai FROM HoaDon INNER JOIN ChiTietLichDat_SanBong ON HoaDon.IDCTLDSB = ChiTietLichDat_SanBong.ID INNER JOIN KhachHang ON HoaDon.IDKhachHang = KhachHang.ID INNER JOIN KhuVuc_SanBong ON ChiTietLichDat_SanBong.ID_KVSB = KhuVuc_SanBong.ID");
         }
         public bool Insert(int IDCTLDSB, int IDKhachHang, DateTime NgayLap_Bill, int ThanhTien, int TrangThai)
         {

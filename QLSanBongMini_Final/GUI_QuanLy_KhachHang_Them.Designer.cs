@@ -52,7 +52,7 @@ namespace QLSanBongMini_Final
             this.numricSoLanDat.Location = new System.Drawing.Point(158, 104);
             this.numricSoLanDat.Name = "numricSoLanDat";
             this.numricSoLanDat.Size = new System.Drawing.Size(460, 27);
-            this.numricSoLanDat.TabIndex = 30;
+            this.numricSoLanDat.TabIndex = 4;
             // 
             // txtFB
             // 
@@ -61,7 +61,7 @@ namespace QLSanBongMini_Final
             this.txtFB.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFB.Properties.Appearance.Options.UseFont = true;
             this.txtFB.Size = new System.Drawing.Size(460, 26);
-            this.txtFB.TabIndex = 22;
+            this.txtFB.TabIndex = 3;
             // 
             // labelControl4
             // 
@@ -83,7 +83,7 @@ namespace QLSanBongMini_Final
             this.txtSDT.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.Properties.Appearance.Options.UseFont = true;
             this.txtSDT.Size = new System.Drawing.Size(460, 26);
-            this.txtSDT.TabIndex = 21;
+            this.txtSDT.TabIndex = 2;
             // 
             // labelControl3
             // 
@@ -118,7 +118,7 @@ namespace QLSanBongMini_Final
             this.txtTenKH.Properties.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenKH.Properties.Appearance.Options.UseFont = true;
             this.txtTenKH.Size = new System.Drawing.Size(460, 26);
-            this.txtTenKH.TabIndex = 20;
+            this.txtTenKH.TabIndex = 1;
             // 
             // labelControl1
             // 
@@ -137,12 +137,12 @@ namespace QLSanBongMini_Final
             // 
             this.btnNhapLai.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNhapLai.Appearance.Options.UseFont = true;
-            this.btnNhapLai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTaiLai.ImageOptions.Image")));
+            this.btnNhapLai.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNhapLai.ImageOptions.Image")));
             this.btnNhapLai.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnNhapLai.Location = new System.Drawing.Point(398, 137);
             this.btnNhapLai.Name = "btnNhapLai";
             this.btnNhapLai.Size = new System.Drawing.Size(220, 37);
-            this.btnNhapLai.TabIndex = 25;
+            this.btnNhapLai.TabIndex = 6;
             this.btnNhapLai.Text = "Nhập lại";
             this.btnNhapLai.Click += new System.EventHandler(this.btnNhapLai_Click);
             // 
@@ -150,12 +150,12 @@ namespace QLSanBongMini_Final
             // 
             this.btnThem.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Appearance.Options.UseFont = true;
-            this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnSua.ImageOptions.Image")));
+            this.btnThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
             this.btnThem.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnThem.Location = new System.Drawing.Point(158, 137);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(234, 37);
-            this.btnThem.TabIndex = 23;
+            this.btnThem.TabIndex = 5;
             this.btnThem.Text = "Thêm khách hàng";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -175,6 +175,7 @@ namespace QLSanBongMini_Final
             this.Controls.Add(this.txtTenKH);
             this.Controls.Add(this.labelControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmQuanLy_KhachHang_Them.IconOptions.SvgImage")));
             this.Name = "frmQuanLy_KhachHang_Them";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm mới khách hàng";

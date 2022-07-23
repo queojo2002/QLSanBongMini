@@ -264,6 +264,7 @@ namespace QLSanBongMini_Final
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.btnThem);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.IconOptions.Image = global::QLSanBongMini_Final.Properties.Resources.food_image_128;
             this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("frmQuanLy_FWA_Them.IconOptions.LargeImage")));
             this.MaximizeBox = false;
             this.Name = "frmQuanLy_FWA_Them";

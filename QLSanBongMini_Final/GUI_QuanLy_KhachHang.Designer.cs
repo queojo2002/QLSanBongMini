@@ -47,7 +47,7 @@ namespace QLSanBongMini_Final
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1126, 584);
             this.Controls.Add(this.flow_fill);
-            this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("frmQuanLy_KhachHang.IconOptions.LargeImage")));
+            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmQuanLy_KhachHang.IconOptions.SvgImage")));
             this.Name = "frmQuanLy_KhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý khách hàng";

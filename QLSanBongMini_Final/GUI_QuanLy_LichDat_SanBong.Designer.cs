@@ -33,6 +33,7 @@ namespace QLSanBongMini_Final
             this.gcViewLDSB = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.pc_bottom = new DevExpress.XtraEditors.PanelControl();
+            this.btnXemChiTiet = new DevExpress.XtraEditors.SimpleButton();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.pc_fill = new DevExpress.XtraEditors.PanelControl();
@@ -58,44 +59,62 @@ namespace QLSanBongMini_Final
             // 
             // gridView1
             // 
+            this.gridView1.Appearance.Row.FontSizeDelta = 2;
+            this.gridView1.Appearance.Row.Options.UseFont = true;
             this.gridView1.GridControl = this.gcViewLDSB;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
             // 
             // pc_bottom
             // 
+            this.pc_bottom.Controls.Add(this.btnXemChiTiet);
             this.pc_bottom.Controls.Add(this.btnXoa);
             this.pc_bottom.Controls.Add(this.btnThem);
             this.pc_bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pc_bottom.Location = new System.Drawing.Point(0, 455);
+            this.pc_bottom.Location = new System.Drawing.Point(0, 465);
             this.pc_bottom.Name = "pc_bottom";
-            this.pc_bottom.Size = new System.Drawing.Size(901, 64);
+            this.pc_bottom.Size = new System.Drawing.Size(901, 54);
             this.pc_bottom.TabIndex = 3;
+            // 
+            // btnXemChiTiet
+            // 
+            this.btnXemChiTiet.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.btnXemChiTiet.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXemChiTiet.Appearance.Options.UseFont = true;
+            this.btnXemChiTiet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXemChiTiet.ImageOptions.Image")));
+            this.btnXemChiTiet.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnXemChiTiet.Location = new System.Drawing.Point(425, 5);
+            this.btnXemChiTiet.Name = "btnXemChiTiet";
+            this.btnXemChiTiet.Size = new System.Drawing.Size(153, 44);
+            this.btnXemChiTiet.TabIndex = 3;
+            this.btnXemChiTiet.Text = "Xem chi tiết";
+            this.btnXemChiTiet.Click += new System.EventHandler(this.btnXemChiTiet_Click);
             // 
             // btnXoa
             // 
             this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnXoa.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Appearance.Options.UseFont = true;
             this.btnXoa.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnXoa.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnXoa.ImageOptions.SvgImage")));
-            this.btnXoa.Location = new System.Drawing.Point(719, 5);
+            this.btnXoa.Location = new System.Drawing.Point(743, 5);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(177, 53);
-            this.btnXoa.TabIndex = 2;
+            this.btnXoa.Size = new System.Drawing.Size(153, 43);
+            this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
             this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnThem.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Appearance.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.Appearance.Options.UseFont = true;
             this.btnThem.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnThem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnThem.ImageOptions.SvgImage")));
-            this.btnThem.Location = new System.Drawing.Point(536, 5);
+            this.btnThem.Location = new System.Drawing.Point(584, 5);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(177, 53);
-            this.btnThem.TabIndex = 0;
+            this.btnThem.Size = new System.Drawing.Size(153, 44);
+            this.btnThem.TabIndex = 4;
             this.btnThem.Text = "Thêm Mới";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
@@ -115,6 +134,7 @@ namespace QLSanBongMini_Final
             this.ClientSize = new System.Drawing.Size(901, 519);
             this.Controls.Add(this.pc_bottom);
             this.Controls.Add(this.pc_fill);
+            this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("frmQuanLy_LichDat_SanBong.IconOptions.LargeImage")));
             this.MaximizeBox = false;
             this.Name = "frmQuanLy_LichDat_SanBong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -139,5 +159,6 @@ namespace QLSanBongMini_Final
         private DevExpress.XtraEditors.SimpleButton btnXoa;
         private DevExpress.XtraEditors.SimpleButton btnThem;
         private DevExpress.XtraEditors.PanelControl pc_fill;
+        private DevExpress.XtraEditors.SimpleButton btnXemChiTiet;
     }
 }

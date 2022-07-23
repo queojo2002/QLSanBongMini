@@ -80,53 +80,7 @@ namespace QLSanBongMini_Final
             flow_ShowFWA.Controls.Add(btn_add);
         }
 
-        /* public void Flow_ThemMoi()
-         {
-             // 
-             // panelThemMoi
-             // 
-             this.panelThemMoi.Controls.Add(this.picThemMoi);
-             this.panelThemMoi.Controls.Add(this.lblThemMoi);
-             this.panelThemMoi.Location = new System.Drawing.Point(3, 3);
-             this.panelThemMoi.Name = "panelThemMoi";
-             this.panelThemMoi.Size = new System.Drawing.Size(256, 256);
-             this.panelThemMoi.TabIndex = 5;
-             // 
-             // lblThemMoi
-             // 
-             this.lblThemMoi.Appearance.BackColor = System.Drawing.Color.Transparent;
-             this.lblThemMoi.Appearance.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-             this.lblThemMoi.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-             this.lblThemMoi.Appearance.Options.UseBackColor = true;
-             this.lblThemMoi.Appearance.Options.UseFont = true;
-             this.lblThemMoi.Appearance.Options.UseForeColor = true;
-             this.lblThemMoi.Appearance.Options.UseTextOptions = true;
-             this.lblThemMoi.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-             this.lblThemMoi.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-             this.lblThemMoi.Dock = System.Windows.Forms.DockStyle.Bottom;
-             this.lblThemMoi.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-             this.lblThemMoi.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
-             this.lblThemMoi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("panel_lbl_Giatien.ImageOptions.SvgImage")));
-             this.lblThemMoi.Location = new System.Drawing.Point(2, 205);
-             this.lblThemMoi.Name = "lblThemMoi";
-             this.lblThemMoi.Click += Show_FWA_ADD;
-             this.lblThemMoi.Size = new System.Drawing.Size(252, 49);
-             this.lblThemMoi.TabIndex = 2;
-             this.lblThemMoi.Text = "Thêm mới FWA";
-             // 
-             // picThemMoi
-             // 
-             this.picThemMoi.Dock = System.Windows.Forms.DockStyle.Fill;
-             this.picThemMoi.Image = global::QLSanBongMini_Final.Properties.Resources.food_image_128;
-             this.picThemMoi.Location = new System.Drawing.Point(2, 2);
-             this.picThemMoi.Name = "picThemMoi";
-             this.picThemMoi.Click += Show_FWA_ADD;
-             this.picThemMoi.Size = new System.Drawing.Size(252, 203);
-             this.picThemMoi.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-             this.picThemMoi.TabIndex = 0;
-             this.picThemMoi.TabStop = false;
-             flow_ShowFWA.Controls.Add(panelThemMoi);
-         }*/
+      
 
         public void Flow_Add_FWA(string ID, string Ten, string GiaTien, Image IMG)
         {

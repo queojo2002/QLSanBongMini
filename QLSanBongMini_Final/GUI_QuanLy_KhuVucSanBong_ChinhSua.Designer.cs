@@ -153,7 +153,7 @@ namespace QLSanBongMini_Final
             this.Controls.Add(this.txtTen_KVSB);
             this.Controls.Add(this.labelControl2);
             this.Controls.Add(this.labelControl1);
-            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmQuanLy_SanBong_ChinhSua.IconOptions.SvgImage")));
+            this.IconOptions.Image = global::QLSanBongMini_Final.Properties.Resources.sanbong;
             this.MaximizeBox = false;
             this.Name = "frmQuanLy_KV_SanBong_ChinhSua";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

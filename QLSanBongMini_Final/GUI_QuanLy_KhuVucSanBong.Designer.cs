@@ -59,6 +59,8 @@ namespace QLSanBongMini_Final
             // 
             // gridView1
             // 
+            this.gridView1.Appearance.Row.FontSizeDelta = 1;
+            this.gridView1.Appearance.Row.Options.UseFont = true;
             this.gridView1.GridControl = this.gcViewKVSB;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -132,6 +134,7 @@ namespace QLSanBongMini_Final
             this.ClientSize = new System.Drawing.Size(1092, 576);
             this.Controls.Add(this.pc_fill);
             this.Controls.Add(this.pc_bottom);
+            this.IconOptions.Image = global::QLSanBongMini_Final.Properties.Resources.sanbong;
             this.Name = "frmQuanLy_KV_SanBong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý khu vực sân bóng";

@@ -537,7 +537,7 @@ namespace QLSanBongMini_Final
             this.Controls.Add(this.gcThongTinDat);
             this.Controls.Add(this.gpKVSB);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmQuanLy_LichDat_SanBong_Them.IconOptions.SvgImage")));
+            this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("frmQuanLy_LichDat_SanBong_Them.IconOptions.LargeImage")));
             this.MaximizeBox = false;
             this.Name = "frmQuanLy_LichDat_SanBong_Them";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

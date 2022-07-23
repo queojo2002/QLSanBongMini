@@ -223,7 +223,7 @@ namespace QLSanBongMini_Final
             // 
             this.btnEdit.Appearance.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.Appearance.Options.UseFont = true;
-            this.btnEdit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThem.ImageOptions.Image")));
+            this.btnEdit.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnEdit.ImageOptions.Image")));
             this.btnEdit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnEdit.Location = new System.Drawing.Point(12, 378);
             this.btnEdit.Name = "btnEdit";
@@ -247,7 +247,8 @@ namespace QLSanBongMini_Final
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.btnEdit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("GUI_QuanLy_FWA_ChinhSua.IconOptions.LargeImage")));
+            this.IconOptions.Image = global::QLSanBongMini_Final.Properties.Resources.food_image_128;
+            this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("frmQuanLy_FWA_Chinhsua.IconOptions.LargeImage")));
             this.MaximizeBox = false;
             this.Name = "frmQuanLy_FWA_Chinhsua";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

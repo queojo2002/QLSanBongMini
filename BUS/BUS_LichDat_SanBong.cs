@@ -35,7 +35,10 @@ namespace BUS
         {
             return DAL_LichDat_SanBong.Instance.Select();
         }
-
+        public DataTable Select_By_ID(int ID)
+        {
+            return DAL_LichDat_SanBong.Instance.Select_By_ID(ID);
+        }
         public string Insert_CoDinh(int ID_KVSB, int ID_KH, DateTime NgayDat_BatDau, DateTime NgayDat_KetThuc, TimeSpan KhungGio_BatDau, TimeSpan KhungGio_KetThuc, bool thu_2, bool thu_3, bool thu_4, bool thu_5, bool thu_6, bool thu_7, bool cn, string GhiChu)
         {
             return DAL_LichDat_SanBong.Instance.Insert_CoDinh(ID_KVSB, ID_KH, NgayDat_BatDau, NgayDat_KetThuc, KhungGio_BatDau, KhungGio_KetThuc, thu_2, thu_3, thu_4, thu_5, thu_6, thu_7, cn, GhiChu);
@@ -44,6 +47,10 @@ namespace BUS
         public string Insert_TheoNgay(int ID_KVSB, int ID_KH, DateTime NgayDat_BatDau, DateTime NgayDat_KetThuc, TimeSpan KhungGio_BatDau, TimeSpan KhungGio_KetThuc, string GhiChu)
         {
             return DAL_LichDat_SanBong.Instance.Insert_TheoNgay(ID_KVSB, ID_KH, NgayDat_BatDau, NgayDat_KetThuc, KhungGio_BatDau, KhungGio_KetThuc, GhiChu);
+        }
+        public bool Delete_By_ID(int ID)
+        {
+            return DAL_LichDat_SanBong.Instance.Delete_By_ID(ID);
         }
     }
 }

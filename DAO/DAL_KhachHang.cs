@@ -76,7 +76,10 @@ namespace DAL
         {
             return DAL_DB.Instance.ThuThi_NonQuery("UPDATE [dbo].[KhachHang] SET [HoTen] = N'"+HoTen+ "',[SDT] = '" + SDT + "',[FB] = N'" + FB + "',[SoLanDat] = '" + SoLanDat + "' WHERE ID = '"+ID+"' ") > 0 ?true:false;
         }
-
+        public bool Update_SoLanDat(int ID)
+        {
+            return DAL_DB.Instance.ThuThi_NonQuery("UPDATE [dbo].[KhachHang] SET [SoLanDat] = [SoLanDat] + 1 WHERE ID = '" + ID + "' ") > 0 ? true : false;
+        }
         public bool Delete_By_ID(int ID)
         {
             return DAL_DB.Instance.ThuThi_NonQuery("DELETE FROM [dbo].[KhachHang] WHERE ID = '"+ID+"' ") > 0 ? true : false;
