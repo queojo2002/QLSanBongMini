@@ -51,7 +51,7 @@ namespace QLSanBongMini_Final
             TongDoanhThu_GiamGia = 0;
             Add_Column_DoanhThu();
         }
-       
+
         public void Load_Data_DoanhThu()
         {
             DataTable doanhthu = BUS_Bill.Instance.Select();
@@ -61,7 +61,7 @@ namespace QLSanBongMini_Final
                 this.Close();
                 return;
             }
-            for(int i = 0; i < doanhthu.Rows.Count; i++)
+            for (int i = 0; i < doanhthu.Rows.Count; i++)
             {
                 if (doanhthu.Rows[i]["TrangThai"].ToString() != "0")
                 {
@@ -73,10 +73,10 @@ namespace QLSanBongMini_Final
                     int GiamGia = int.Parse(doanhthu.Rows[i]["GiamGia"].ToString());
                     TongDoanhThu_GiamGia += (int)(ThanhTien - (ThanhTien * (((double)GiamGia) / 100)));
                     TongDoanhThu += ThanhTien;
-                Add_Row_DoanhThu(IDCTLDSB, IDKhachHang, NgayLapBill, NgayXuatBill, ThanhTien, GiamGia, "Đã thanh toán");
+                    Add_Row_DoanhThu(IDCTLDSB, IDKhachHang, NgayLapBill, NgayXuatBill, ThanhTien, GiamGia, "Đã thanh toán");
                 }
             }
-            lblTongDoanhThu.Text = "Tổng doanh thu trước khi áp dụng giảm giá: : " + TongDoanhThu.ToString("c0", CultureInfo.GetCultureInfo("vi-VN")) + "\n\n Tổng doanh thu sau khi áp dụng giảm giá: " + TongDoanhThu_GiamGia.ToString("c0", CultureInfo.GetCultureInfo("vi-VN"));
+            lblTongDoanhThu.Text = "Tổng doanh thu trước khi áp dụng giảm giá: " + TongDoanhThu.ToString("c0", CultureInfo.GetCultureInfo("vi-VN")) + "\n\n Tổng doanh thu sau khi áp dụng giảm giá: " + TongDoanhThu_GiamGia.ToString("c0", CultureInfo.GetCultureInfo("vi-VN"));
         }
         public void Load_Data_DoanhThu(DataTable doanhthu)
         {
@@ -143,9 +143,14 @@ namespace QLSanBongMini_Final
             {
                 Reload();
                 Load_Data_DoanhThu(BUS_Bill.Instance.Select_Xem_DoanhThu(DE_TuNgay.DateTime, DE_DenNgay.DateTime));
-            }    
+            }
 
-            
+
+
+        }
+
+        private void btnIn_Click(object sender, EventArgs e)
+        {
 
         }
     }

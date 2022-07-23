@@ -67,6 +67,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoanhThu_Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DoanhThu_Report.Designer.cs">
+      <DependentUpon>DoanhThu_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Login.Designer.cs">
+      <DependentUpon>GUI_Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_Print.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +169,18 @@
     <Compile Include="GUI_QuanLy_SanBong.Designer.cs">
       <DependentUpon>GUI_QuanLy_SanBong.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI_QuanLy_TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_TaiKhoan.Designer.cs">
+      <DependentUpon>GUI_QuanLy_TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_QuanLy_TaiKhoan_Them_ChinhSua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_QuanLy_TaiKhoan_Them_ChinhSua.Designer.cs">
+      <DependentUpon>GUI_QuanLy_TaiKhoan_Them_ChinhSua.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI_ThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +201,12 @@
     <Compile Include="ThanhToan_HoaDon.Designer.cs">
       <DependentUpon>ThanhToan_HoaDon.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DoanhThu_Report.resx">
+      <DependentUpon>DoanhThu_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Login.resx">
+      <DependentUpon>GUI_Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI_Print.resx">
       <DependentUpon>GUI_Print.cs</DependentUpon>
     </EmbeddedResource>
@@ -221,6 +251,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_QuanLy_SanBong.resx">
       <DependentUpon>GUI_QuanLy_SanBong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLy_TaiKhoan.resx">
+      <DependentUpon>GUI_QuanLy_TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_QuanLy_TaiKhoan_Them_ChinhSua.resx">
+      <DependentUpon>GUI_QuanLy_TaiKhoan_Them_ChinhSua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI_ThanhToan.resx">
       <DependentUpon>GUI_ThanhToan.cs</DependentUpon>

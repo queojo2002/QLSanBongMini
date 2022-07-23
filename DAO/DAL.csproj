@@ -50,6 +50,7 @@
     <Compile Include="DAL_KhachHang.cs" />
     <Compile Include="DAL_KhuVuc_SanBong.cs" />
     <Compile Include="DAL_LichDat_SanBong.cs" />
+    <Compile Include="DAL_TaiKhoan.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -30,9 +30,10 @@ namespace QLSanBongMini_Final
         }
         private void btnTaiLai_Click(object sender, EventArgs e)
         {
+            cbeLoaiFWA.Text = "";
             Load_FWA();
         }
-       
+
 
 
         public void Load_FWA()
@@ -62,7 +63,7 @@ namespace QLSanBongMini_Final
             }
         }
 
-       
+
 
 
 
@@ -233,7 +234,8 @@ namespace QLSanBongMini_Final
             if (cbeLoaiFWA.Text == "Nước uống")
             {
                 IDLoaiFWA = 2;
-            }else if (cbeLoaiFWA.Text == "Thức ăn")
+            }
+            else if (cbeLoaiFWA.Text == "Thức ăn")
             {
                 IDLoaiFWA = 3;
             }
@@ -249,6 +251,6 @@ namespace QLSanBongMini_Final
 
         }
 
-      
+
     }
 }

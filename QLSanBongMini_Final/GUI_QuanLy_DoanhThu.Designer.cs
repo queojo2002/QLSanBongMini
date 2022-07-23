@@ -163,6 +163,7 @@ namespace QLSanBongMini_Final
             this.btnIn.Size = new System.Drawing.Size(165, 45);
             this.btnIn.TabIndex = 7;
             this.btnIn.Text = "In doanh thu";
+            this.btnIn.Click += new System.EventHandler(this.btnIn_Click);
             // 
             // btnTailai
             // 

@@ -34,7 +34,6 @@ namespace QLSanBongMini_Final
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.pc_bottom = new DevExpress.XtraEditors.PanelControl();
             this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
-            this.btnChinhSua = new DevExpress.XtraEditors.SimpleButton();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.pc_fill = new DevExpress.XtraEditors.PanelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gcViewLDSB)).BeginInit();
@@ -66,7 +65,6 @@ namespace QLSanBongMini_Final
             // pc_bottom
             // 
             this.pc_bottom.Controls.Add(this.btnXoa);
-            this.pc_bottom.Controls.Add(this.btnChinhSua);
             this.pc_bottom.Controls.Add(this.btnThem);
             this.pc_bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pc_bottom.Location = new System.Drawing.Point(0, 455);
@@ -87,19 +85,6 @@ namespace QLSanBongMini_Final
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Xóa";
             // 
-            // btnChinhSua
-            // 
-            this.btnChinhSua.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnChinhSua.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChinhSua.Appearance.Options.UseFont = true;
-            this.btnChinhSua.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnChinhSua.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnChinhSua.ImageOptions.SvgImage")));
-            this.btnChinhSua.Location = new System.Drawing.Point(536, 5);
-            this.btnChinhSua.Name = "btnChinhSua";
-            this.btnChinhSua.Size = new System.Drawing.Size(177, 53);
-            this.btnChinhSua.TabIndex = 1;
-            this.btnChinhSua.Text = "Chỉnh Sửa";
-            // 
             // btnThem
             // 
             this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.Right;
@@ -107,7 +92,7 @@ namespace QLSanBongMini_Final
             this.btnThem.Appearance.Options.UseFont = true;
             this.btnThem.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnThem.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnThem.ImageOptions.SvgImage")));
-            this.btnThem.Location = new System.Drawing.Point(353, 5);
+            this.btnThem.Location = new System.Drawing.Point(536, 5);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(177, 53);
             this.btnThem.TabIndex = 0;
@@ -152,7 +137,6 @@ namespace QLSanBongMini_Final
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraEditors.PanelControl pc_bottom;
         private DevExpress.XtraEditors.SimpleButton btnXoa;
-        private DevExpress.XtraEditors.SimpleButton btnChinhSua;
         private DevExpress.XtraEditors.SimpleButton btnThem;
         private DevExpress.XtraEditors.PanelControl pc_fill;
     }

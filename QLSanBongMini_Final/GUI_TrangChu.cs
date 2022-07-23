@@ -10,16 +10,40 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using BUS;
 namespace QLSanBongMini_Final
 {
     public partial class frmTrangChu : DevExpress.XtraBars.Ribbon.RibbonForm
     {
+        public string Username_Global = null;
+        public string ChucVu = null;
+        DataTable Get_TK = null;
         public frmTrangChu()
         {
             InitializeComponent();
         }
-
+        public frmTrangChu(string Username)
+        {
+            InitializeComponent();
+            Username_Global = Username;
+            Get_TK = BUS_TaiKhoan.Instance.Select_By_Username(Username);
+            ChucVu = Get_TK.Rows[0]["UserType"].ToString();
+            if (ChucVu == "ADMIN")
+            {
+                rp_nhanvien.Visible = false;
+                rp_manager.Visible = false;
+            }
+            else if (ChucVu == "NhanVien")
+            {
+                rp_manager.Visible = false;
+                rp_admin.Visible = false;
+            }
+            else if (ChucVu == "NguoiQuanLy")
+            {
+                rp_admin.Visible = false;
+                rp_nhanvien.Visible = false;
+            }
+        }
         private void btn_mnKhuVucSanBong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             frmQuanLy_KV_SanBong qlkv_sb = new frmQuanLy_KV_SanBong();
@@ -60,6 +84,46 @@ namespace QLSanBongMini_Final
             frmQuanLy_DoanhThu _DoanhThu = new frmQuanLy_DoanhThu();
             _DoanhThu.MdiParent = this;
             _DoanhThu.Show();
+        }
+
+        private void btn_mnTaiKhoan_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmQuanLy_TaiKhoan frmQuanLy = new frmQuanLy_TaiKhoan(Username_Global);
+            frmQuanLy.MdiParent = this;
+            frmQuanLy.Show();
+        }
+
+        private void frmTrangChu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void btnDangXuat1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DialogResult dx_confirm = XtraMessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (dx_confirm == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+        private void btnDangXuat2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DialogResult dx_confirm = XtraMessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (dx_confirm == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+        private void btnDangXuat3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DialogResult dx_confirm = XtraMessageBox.Show("Bạn có chắc chắn muốn đăng xuất?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (dx_confirm == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }
