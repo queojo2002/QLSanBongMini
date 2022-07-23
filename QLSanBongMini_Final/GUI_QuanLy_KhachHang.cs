@@ -47,7 +47,7 @@ namespace QLSanBongMini_Final
             if (get_list_khachhang != null)
             {
                 SimpleButton btn_add = new SimpleButton();
-                btn_add.ImageOptions.Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\Resources\\AddUser_Logo.png")));
+                btn_add.ImageOptions.Image = QLSanBongMini_Final.Properties.Resources.AddUser_Logo;
                 btn_add.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
                 btn_add.Size = new System.Drawing.Size(210, 210);
                 btn_add.Text = "\r\n Thêm khách hàng";
@@ -56,7 +56,7 @@ namespace QLSanBongMini_Final
                 for (int i = 0; i < get_list_khachhang.Rows.Count; i++)
                 {
                     SimpleButton button = new SimpleButton();
-                    button.ImageOptions.Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\Resources\\User_Logo.png")));
+                    button.ImageOptions.Image = QLSanBongMini_Final.Properties.Resources.User_Logo;
                     button.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
                     button.Name = get_list_khachhang.Rows[i]["ID"].ToString();
                     button.Size = new System.Drawing.Size(210, 210);

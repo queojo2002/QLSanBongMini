@@ -408,7 +408,7 @@ namespace QLSanBongMini_Final
             btn_xuly_1.Click += Click_Huy_San;
 
             pic_add.Dock = System.Windows.Forms.DockStyle.Fill;
-            pic_add.Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\Resources\\sanbong.png")));
+            pic_add.Image = QLSanBongMini_Final.Properties.Resources.sanbong;
             pic_add.Location = new System.Drawing.Point(2, 2);
             pic_add.Size = new System.Drawing.Size(325, 215);
             pic_add.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

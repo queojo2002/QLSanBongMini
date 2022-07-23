@@ -27,7 +27,7 @@ namespace QLSanBongMini_Final
 
         private void btn_thoat_Click(object sender, EventArgs e)
         {
-            DialogResult thoat_confirm = XtraMessageBox.Show("Bạn Thật Sự Muốn Thoát Hả !!!", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult thoat_confirm = XtraMessageBox.Show("Bạn có chắc chắn là muốn thoát chương trình?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (thoat_confirm == DialogResult.Yes)
             {
                 this.Close();
@@ -36,9 +36,6 @@ namespace QLSanBongMini_Final
 
         private void btn_DangNhap_Click(object sender, EventArgs e)
         {
-            /*SplashScreenManager.ShowForm(typeof(WaitingForMe));
-            Thread.Sleep(1000);
-            SplashScreenManager.CloseForm();*/
             if (txt_TenDangNhap.Text != string.Empty && txt_MatKhau.Text != string.Empty)
             {
                 bool Login = BUS_TaiKhoan.Instance.CheckLogin(txt_TenDangNhap.Text, txt_MatKhau.Text);
@@ -51,12 +48,22 @@ namespace QLSanBongMini_Final
                 }
                 else
                 {
-                    XtraMessageBox.Show("Tên Đăng Nhập Hoặc Mật Khẩu Không Đúng !!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    XtraMessageBox.Show("Tên đăng nhập hoặc mật khẩu không chính xác!!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
             {
-                XtraMessageBox.Show("Vui Lòng Nhập Đầy Đủ Thông Tin Đăng Nhập !!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                XtraMessageBox.Show("Vui lòng nhập đầy đủ thông tin đăng nhập !!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void frmDangNhap_Load(object sender, EventArgs e)
+        {
+            if (BUS_DB.Instance.Check_Connect() == false)
+            {
+                XtraMessageBox.Show("Kết nối SQL không thành công !!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+                return;
             }
         }
     }

@@ -107,7 +107,7 @@ namespace QLSanBongMini_Final
             // btnAddFWA
             // 
             button_add.Dock = System.Windows.Forms.DockStyle.Bottom;
-            button_add.ImageOptions.Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\Resources\\add_icon_1.png")));
+            button_add.ImageOptions.Image = QLSanBongMini_Final.Properties.Resources.add_icon_11;
             button_add.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             button_add.Location = new System.Drawing.Point(2, 171);
             button_add.Name = ID;

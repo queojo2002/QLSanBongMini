@@ -103,6 +103,26 @@ namespace QLSanBongMini_Final.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add_icon_11 {
+            get {
+                object obj = ResourceManager.GetObject("add_icon_11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ADD_TaiKhoan {
+            get {
+                object obj = ResourceManager.GetObject("ADD_TaiKhoan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap AddUser_Logo {
             get {
                 object obj = ResourceManager.GetObject("AddUser_Logo", resourceCulture);
@@ -226,6 +246,16 @@ namespace QLSanBongMini_Final.Properties {
         internal static System.Drawing.Bitmap sanbong {
             get {
                 object obj = ResourceManager.GetObject("sanbong", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shop_food {
+            get {
+                object obj = ResourceManager.GetObject("shop_food", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

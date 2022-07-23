@@ -44,6 +44,7 @@
     <Compile Include="BUS_Bill.cs" />
     <Compile Include="BUS_ChiTietHoaDon.cs" />
     <Compile Include="BUS_ChiTiet_LichDat_SanBong.cs" />
+    <Compile Include="BUS_DB.cs" />
     <Compile Include="BUS_FWA.cs" />
     <Compile Include="BUS_KhachHang.cs" />
     <Compile Include="BUS_KhuVuc_SanBong.cs" />

@@ -55,5 +55,10 @@ namespace DAL
         {
             return DAL_DB.Instance.ThuThi_NonQuery("UPDATE [dbo].[FWA] SET [IDLoaiFWA] = '" + IDLoaiFWA + "' ,[TenFWA] = N'" + TenFWA + "' ,[GiaTien] = '" + GiaTien + "'  WHERE ID = '" + IDFWA + "'") > 0 ? true : false;
         }
+        public bool Delete(int IDFWA)
+        {
+            return DAL_DB.Instance.ThuThi_NonQuery("DELETE FROM [dbo].[FWA] WHERE ID = '" + IDFWA + "'") > 0 ? true : false;
+        }
+
     }
 }

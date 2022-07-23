@@ -37,10 +37,10 @@ namespace QLSanBongMini_Final
             this.txt_TenDangNhap = new DevExpress.XtraEditors.TextEdit();
             this.lbl_matkhau = new DevExpress.XtraEditors.LabelControl();
             this.lbl_tendangnhap = new DevExpress.XtraEditors.LabelControl();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pic_background = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MatKhau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_TenDangNhap.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_background)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_thoat
@@ -139,21 +139,21 @@ namespace QLSanBongMini_Final
             this.lbl_tendangnhap.TabIndex = 8;
             this.lbl_tendangnhap.Text = "Username:";
             // 
-            // pictureBox1
+            // pic_background
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(423, 280);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.pic_background.Image = ((System.Drawing.Image)(resources.GetObject("pic_background.Image")));
+            this.pic_background.Location = new System.Drawing.Point(12, 12);
+            this.pic_background.Name = "pic_background";
+            this.pic_background.Size = new System.Drawing.Size(423, 280);
+            this.pic_background.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_background.TabIndex = 6;
+            this.pic_background.TabStop = false;
             // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 424);
+            this.ClientSize = new System.Drawing.Size(446, 427);
             this.ControlBox = false;
             this.Controls.Add(this.btn_thoat);
             this.Controls.Add(this.btn_NhapLai);
@@ -162,16 +162,17 @@ namespace QLSanBongMini_Final
             this.Controls.Add(this.txt_TenDangNhap);
             this.Controls.Add(this.lbl_matkhau);
             this.Controls.Add(this.lbl_tendangnhap);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pic_background);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.IconOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("frmDangNhap.IconOptions.SvgImage")));
             this.MaximizeBox = false;
             this.Name = "frmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập vào hệ thống";
+            this.Load += new System.EventHandler(this.frmDangNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txt_MatKhau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_TenDangNhap.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_background)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -185,6 +186,6 @@ namespace QLSanBongMini_Final
         private DevExpress.XtraEditors.TextEdit txt_TenDangNhap;
         private DevExpress.XtraEditors.LabelControl lbl_matkhau;
         private DevExpress.XtraEditors.LabelControl lbl_tendangnhap;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pic_background;
     }
 }

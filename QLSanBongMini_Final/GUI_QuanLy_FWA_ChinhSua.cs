@@ -129,5 +129,23 @@ namespace QLSanBongMini_Final
                 return image;
             }
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            DialogResult del_confirm = XtraMessageBox.Show("Bạn có chắc chắn muốn xóa FWA này ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (del_confirm == DialogResult.Yes)
+            {
+                if (BUS_FWA.Instance.Delete(IDFWA_Global) == true)
+                {
+                    XtraMessageBox.Show("Xóa FWA thành công !!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
+                }
+                else
+                {
+                    XtraMessageBox.Show("Xóa FWA không thành công !!!\n\n Error: Không xác định...", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+        }
     }
 }

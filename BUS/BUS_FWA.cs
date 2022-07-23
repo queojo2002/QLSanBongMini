@@ -53,5 +53,9 @@ namespace BUS
         {
             return DAL_FWA.Instance.Update(IDFWA, IDLoaiFWA, TenFWA, GiaTien);
         }
+        public bool Delete(int IDFWA)
+        {
+            return DAL_FWA.Instance.Delete(IDFWA);
+        }
     }
 }

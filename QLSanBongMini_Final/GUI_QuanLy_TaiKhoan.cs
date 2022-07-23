@@ -52,7 +52,7 @@ namespace QLSanBongMini_Final
             if (get_list_taikhoan != null)
             {
                 SimpleButton btn_add = new SimpleButton();
-                btn_add.ImageOptions.Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\Resources\\ADD_TaiKhoan.png")));
+                btn_add.ImageOptions.Image = QLSanBongMini_Final.Properties.Resources.ADD_TaiKhoan;
                 btn_add.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
                 btn_add.Size = new System.Drawing.Size(210, 210);
                 btn_add.Text = "\r\n Thêm khách hàng";
@@ -62,7 +62,7 @@ namespace QLSanBongMini_Final
                 {
                     if (get_list_taikhoan.Rows[i]["Username"].ToString() == Username_Global) continue;
                     SimpleButton button = new SimpleButton();
-                    button.ImageOptions.Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\Resources\\user.png")));
+                    button.ImageOptions.Image = QLSanBongMini_Final.Properties.Resources.user;
                     button.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;
                     button.Name = get_list_taikhoan.Rows[i]["Username"].ToString();
                     button.Size = new System.Drawing.Size(210, 210);

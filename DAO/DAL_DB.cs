@@ -30,7 +30,32 @@ namespace DAL
             }
         }
 
+        
         private DAL_DB() { }
+
+
+        public bool Check_Connect()
+        {
+            try
+            {
+                using (var connection = new SqlConnection(conn_str))
+                {
+                    var query = "select 1";
+
+                    var command = new SqlCommand(query, connection);
+
+                    connection.Open();
+
+                    command.ExecuteScalar();
+
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
 
         public DataTable ThuThi_Query(string query)
         {

@@ -42,6 +42,7 @@ namespace QLSanBongMini_Final
             this.numricGiaTien = new System.Windows.Forms.NumericUpDown();
             this.txtTen = new DevExpress.XtraEditors.TextEdit();
             this.btnEdit = new DevExpress.XtraEditors.SimpleButton();
+            this.btnXoa = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.cbeLoaiFWA.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panel_image)).BeginInit();
             this.panel_image.SuspendLayout();
@@ -227,16 +228,30 @@ namespace QLSanBongMini_Final
             this.btnEdit.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
             this.btnEdit.Location = new System.Drawing.Point(12, 378);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(463, 45);
+            this.btnEdit.Size = new System.Drawing.Size(230, 45);
             this.btnEdit.TabIndex = 23;
             this.btnEdit.Text = "Chỉnh Sửa !!!";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Appearance.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Appearance.Options.UseFont = true;
+            this.btnXoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnXoa.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.btnXoa.Location = new System.Drawing.Point(247, 378);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(230, 45);
+            this.btnXoa.TabIndex = 29;
+            this.btnXoa.Text = "Xóa !!!";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // frmQuanLy_FWA_Chinhsua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(485, 430);
+            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.cbeLoaiFWA);
             this.Controls.Add(this.lblLoaiFWA);
             this.Controls.Add(this.lblTenFWA);
@@ -278,5 +293,6 @@ namespace QLSanBongMini_Final
         private System.Windows.Forms.NumericUpDown numricGiaTien;
         private DevExpress.XtraEditors.TextEdit txtTen;
         private DevExpress.XtraEditors.SimpleButton btnEdit;
+        private DevExpress.XtraEditors.SimpleButton btnXoa;
     }
 }

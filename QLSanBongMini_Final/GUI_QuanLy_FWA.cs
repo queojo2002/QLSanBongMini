@@ -70,7 +70,7 @@ namespace QLSanBongMini_Final
         public void Flow_ThemMoi()
         {
             SimpleButton btn_add = new SimpleButton();
-            btn_add.ImageOptions.Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\Resources\\shop_food.png")));
+            btn_add.ImageOptions.Image = QLSanBongMini_Final.Properties.Resources.shop_food;
             btn_add.Appearance.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
 
             btn_add.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.TopCenter;

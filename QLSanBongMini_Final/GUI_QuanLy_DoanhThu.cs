@@ -58,7 +58,6 @@ namespace QLSanBongMini_Final
             if (doanhthu == null || doanhthu.Rows.Count <= 0)
             {
                 XtraMessageBox.Show("Hiện tại chưa có doanh thu !!!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                this.Close();
                 return;
             }
             for (int i = 0; i < doanhthu.Rows.Count; i++)
